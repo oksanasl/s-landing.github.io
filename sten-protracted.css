@@ -1,0 +1,433 @@
+﻿*{
+margin:0px;
+padding:0px;
+max-width: 100%;
+}
+#body{
+width:100%;
+background-color:#FFFFFF;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+max-width: 100%;
+}
+#MainBanner{
+box-sizing: border-box;
+background: url(images/TopBanner.jpg) no-repeat;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%;
+margin: 0 0 10px 0;
+background-position: 0px;
+}
+#Introduction{
+margin: 0 5px;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+-webkit-user-select: none;
+}
+.Title{
+text-align: center;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+font-style: normal;
+font-size: xx-large;
+font-weight: 400;
+line-height: 1.7;
+}
+.Subtitle{
+text-align: center;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+font-style: normal;
+font-size: x-large;
+font-weight: 400;
+line-height: 1.5;
+}
+#StateOfBusiness_video{
+margin: 20px;
+margin-top: 40px;
+width: 100%;
+display: block;
+box-sizing:;
+}
+#State_of_business{
+margin-top: 30px;
+margin-left: 80px;
+padding: 5px 10px;
+width: 40%;
+display: inline;
+float: left;
+text-align: left;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+font-size: x-large;
+font-weight: 500;
+line-height: 1.5;
+}
+.Grounds_video_wrap{
+margin: 5px;
+margin-left: 4%;
+width: 35%;
+display: block;
+float: left;
+box-sizing:;
+}
+.Grounds_video_1{
+float: left;
+width: 100%;
+display: block;
+box-sizing:;
+}
+#Benefits{
+margin: 30px auto;
+width: 95%;
+box-sizing: border-box;
+text-align: center;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+}
+#Benefits_table{
+margin: 35px auto 10px;
+width: 100%;
+box-sizing: border-box;
+display: table;
+}
+.Benefits_row{
+margin: 20px 0;
+display: flex;
+vertical-align: middle; 
+}
+.Benefits_subtitle{
+margin-bottom: 30px;
+padding: 10px 15px;
+box-sizing: border-box;
+width: 33.33333333333333%;
+display: table-cell;
+vertical-align: middle; 
+font-size: x-large;
+font-weight: 600;
+line-height: 1 em;
+}
+.Benefits_item{
+margin: 10px 0;
+margin-bottom: 30px;
+padding: 10px 15px;
+box-sizing: border-box;
+width: 25%;
+display: table-cell;
+vertical-align: middle; 
+min-height: 1px;
+line-height: 1.3 em;
+opacity: 1;
+}
+.Benefits_item i{
+width: 15%;
+padding-right: 30px;
+float: left;
+font-size: xx-large;
+font-weight: 500;
+text-align: center;
+display: inline !important;
+}
+.Benefits_item i:hover{
+color: #FFA500;
+}
+.Benefits_text{
+width: 85%;
+padding: 90px 0 90px 0;
+display: inline;
+font-size: large;
+font-weight: 500; 
+/*float: right;*/
+position: relative;
+}
+#CommodityGroups{
+margin: 30px 10%;
+display: block;
+box-sizing:;
+}
+#CommodityGroups_wrap{
+margin-top: 40px;
+display: inline-block;
+}
+.CommodityGroups_icons_line_1,.CommodityGroups_icons_line_2{
+margin: 0 auto;
+float: left;
+width: 100%;
+height: 210px;
+padding-right: 50px; 
+padding-left: 50px;
+line-height: 150px;
+}
+.CommodityGroups_icons{
+margin: 0 auto;
+padding: 5px 10px;
+width: 17%;
+float: left;
+display: block;
+box-sizing:;
+text-align: center;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+font-size: small;
+font-weight: 700;
+line-height: 1;
+}
+#WhyUs{
+margin: 30px 10px;
+width: 100%;
+-webkit-user-select: none;
+}
+#Grounds{
+margin: 0 auto;
+width: 100%;
+height: 220px;
+display: block;
+opacity:;
+}
+#Grounds_row_circles{
+margin-top: 40px;
+margin-bottom: 20px;
+padding: 0;
+width: 100%;
+display: block;
+}
+.Grounds_circles{
+margin: 0;
+vertical-align: middle;
+display: table-cell;
+}
+.Grounds_circles_box{
+margin: 10px 20px;
+width: 180px;
+height: 180px;
+display: table;
+}
+.Grounds_circles_border{
+width: 180px;
+height: 180px;
+border: 1px solid black;
+border-radius: 100px;
+background: #FFA500; 
+vertical-align: middle;
+}
+.Grounds_circles_content{
+margin: auto 0;
+padding: 50px 15px 10px; 
+text-align: center;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+font-size: large;
+font-weight: 600;
+line-height: 25px;
+display: table-cell;
+vertical-align: middle;
+}
+#Clients{
+margin: 30px 10px;
+width: 100%;
+-webkit-user-select: none;
+}
+.Grounds_video{
+margin: 30px 0 0;
+width: 100%;
+height: 250px;
+display: flex;
+float: left;
+min-height: 210px;
+box-sizing:;
+}
+.Grounds_video_1,.Grounds_video_2,.Grounds_video_3{
+margin: 15px;
+width: 100%;
+height: 200px;
+display: inline;
+float: left;
+min-height: 200px;
+}
+.Testimonials{
+margin: 0;
+width: 100%;
+height: 250px;
+display: flex;
+float: left;
+box-sizing:;
+}
+.Testimonial_1,.Testimonial_2,.Testimonial_3{
+margin: 15px;
+width: 500px;
+height: 280px;
+display: inline;
+float: left;
+min-height: 280px;
+}
+.Testimonial_image{
+margin: 3px;
+display: inline;
+float: left;
+border-radius: 100px;
+}
+.image_circle{
+border-radius: 100px;
+}
+.Testimonial_icons{
+margin: 3px;
+display: inline;
+text-align: right;
+float: right;
+}
+.Testimonial_icons i{
+padding-top: 5px;
+padding-right: 10px;
+font-size: x-large;
+color: #FFA500;
+}
+.Testimonial_icons i:hover{
+color: #00BFFF;
+}
+.Testimonial_quotation{
+margin: 3px;
+background-image: url(images/speech_bubble1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+width: 250px;
+float: right;
+display: flex;
+}
+.Testimonial_quotation p{
+padding: 30px 12px 3px;
+display: inline-block;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+font-size: small;
+font-weight: 400;
+line-height: 1.2;
+text-align: center;
+-webkit-user-select: none;
+}
+#Distribution{
+margin-top: 300px;
+margin: 0;
+width:100%;
+display: block;
+box-sizing:;
+-webkit-user-select: none;
+}
+#Distribution_wrap{
+margin: 40px 0 20px;
+display: inline-block;
+box-sizing:;
+-webkit-user-select: none;
+}
+.Distribution_line_1,.Distribution_line_2,.Distribution_line_3{
+margin: 0;
+float: left;
+width: 100%;
+height: 130px;
+line-height: 160px;
+display: flex;
+vertical-align: middle; 
+}
+.Distribution_icon{
+margin: 0;
+padding: 5px 10px;
+float: left;
+display: block;
+box-sizing:;
+}
+#ContactForm{
+margin: 30px;
+width: 100%;
+display: inline-block;
+box-sizing:;
+}
+.text_color{
+text-align: center;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+font-size: xx-large;
+font-weight: 900 !important;
+line-height: 1.5;
+color: #FF0000;
+}
+#ContactForm_wrap{
+margin: 30px auto;
+width: 50%;
+display: block;
+text-align: left;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+font-size: large;
+font-weight: 400;
+line-height: 1.5;
+}
+#ContactForm_wrap i{
+padding-top: 5px;
+padding-right: 10px;
+font-size: x-large;
+color: #FFA500;
+}
+.note{
+text-align: right;
+padding-right: 120px;
+font-size: small;
+font-weight: 400;
+line-height: 1.5;
+}
+input, textarea{
+width: 400px;
+height: 27px;
+background: #efefef;
+border: 1px solid #dedede;
+padding: 10px;
+margin-top: 3px;
+font-size: 0.9em;
+color: #3a3a3a;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+}
+textarea{
+height: 90px;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+}
+.button{
+background-repeat: no-repeat;
+display: block;
+box-sizing:;
+}
+#ContactInfo{
+margin: 30px;
+width: 100%;
+display: flex;
+}
+#WorkingHours{
+margin: 10px;
+padding: 25px 10px 5px;
+width: 15%;
+float: left;
+display: inline;
+text-align: left;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+font-size: large;
+font-weight: 400;
+line-height: 1.5;
+}
+#Map{
+margin: 15px;
+width: 50%;
+display: inline;
+}
+#googleMap
+#Address{
+margin-left: 100px;
+margin: 10px;
+padding: 70px 10px 5px;
+width: 10%;
+float: right;
+clear: both;
+display: inline;
+text-align: center;
+font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+font-size: large;
+font-weight: 400;
+line-height: 1.5;
+vertical-align: middle;
+}
+#Footer{
+margin: 0;
+width: 100%;
+height: 50px;
+display: block;
+background-color:#FFA500;
+text-align: center;
+clear: both;
+}
