@@ -353,7 +353,7 @@ font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Styl
 .heading{
 padding-left: 200px;
 }
-.button{border: 0px;width: 82%;background-color: white;display: block;height: 69%;} .button: click{}
+.button{border: 0px;width: 64%;background-color: white;display: block;height: 55%;} .button: click{}
 #ContactInfo{
 margin: 30px;
 max-width: 100%;
