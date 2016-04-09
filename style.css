@@ -1,411 +1,479 @@
-*{
-margin:0px auto;
-padding:0px;
-max-width: 100%;
+* {
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 100%;
 }
-#body{
-width:100%;
-background-color:#FFFFFF;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-max-width: 100%;
+#body {
+    width: 100%;
+    background-color: #FFFFFF;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    max-width: 100%;
 }
-#MainBanner{
-box-sizing: border-box;
-background: url(images/TopBanner.jpg) no-repeat;
--moz-background-size: 100%; /* Firefox 3.6+ */
--webkit-background-size: 100%; /* Safari 3.1+ ÃÂ¸ Chrome 4.0+ */
--o-background-size: 100%; /* Opera 9.6+ */
-background-size: 100%;
-margin: 0 0 10px 0;
-background-position: 0px;
+#MainBanner {
+    box-sizing: border-box;
+    background: url(images/TopBanner.jpg) no-repeat;
+    -moz-background-size: 100%;
+    /* Firefox 3.6+ */
+    -webkit-background-size: 100%;
+    /* Safari 3.1+ ÃƒÂÃ‚Â¸ Chrome 4.0+ */
+    -o-background-size: 100%;
+    /* Opera 9.6+ */
+    background-size: 100%;
+    margin: 0 0 10px 0;
+    background-position: 0px;
 }
-#Introduction{
-margin: 0 5px;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+#Introduction {
+    overflow: hidden;
+    /* height: 541px; */
+    margin: 0 5px;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
 }
-.Title{
-text-align: center;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-font-style: normal;
-font-size: xx-large;
-font-weight: 400;
-line-height: 1.7;
+.Title {
+    text-align: center;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    font-style: normal;
+    font-size: xx-large;
+    font-weight: 400;
+    line-height: 1.7;
 }
-.Subtitle{
-text-align: center;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-font-style: normal;
-font-size: x-large;
-font-weight: 400;
-line-height: 1.5;
+.Subtitle {
+    text-align: center;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    font-style: normal;
+    font-size: x-large;
+    font-weight: 400;
+    line-height: 1.5;
 }
-#StateOfBusiness_video{
-margin: 20px;
-margin-top: 40px;
-width: 100%;
-display: block;
+#StateOfBusiness_video {
+    margin: 20px;
+    margin-top: 40px;
+    width: 100%;
+    display: block;
 }
-#State_of_business{
-margin-top: 30px;
-margin-left: 80px;
-margin-bottom: 50px;
-padding: 5px 10px;
-width: 40%;
-display: inline;
-float: left;
-text-align: left;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-font-size: x-large;
-font-weight: 500;
-line-height: 1.5;
+#State_of_business {
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    padding: 5px 10px;
+    width: 40%;
+    display: inline;
+    float: left;
+    text-align: left;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    font-size: x-large;
+    font-weight: 500;
+    line-height: 1.5;
 }
-.text_color_1{
-text-align: center;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-font-size: x-large;
-font-weight: 900 !important;
-line-height: 1.5;
-color: #FF0000;
+.text_color_1 {
+    text-align: center;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    font-size: x-large;
+    font-weight: 900 !important;
+    line-height: 1.5;
+    color: #FF0000;
 }
-.Grounds_video_wrap{
-margin: 5px;
-margin-left: 4%;
-width: 35%;
-display: block;
-float: left;
-box-sizing:;
+.Grounds_video_wrap {
+    margin: 5px;
+    margin-left: 4%;
+    width: 35%;
+    display: block;
+    float: left;
+    box-sizing: ;
 }
-.Grounds_video_1{
-float: left;
-width: 100%;
-display: block;
-box-sizing:;
+.Grounds_video_1 {
+    float: left;
+    width: 100%;
+    display: block;
+    box-sizing: ;
 }
-#Benefits{
-margin: 0 2%;
-max-width: 100%;
-box-sizing: border-box;
-text-align: center;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-/*background-color: #ffa31a;*/
+#Benefits {
+    padding: 0px 4%;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    background-color: #ffa31a;
 }
-#Benefits_table{
-margin: 35px auto 10px;
-width: 100%;
-box-sizing: border-box;
-display: table;
+#Benefits_table {
+    padding-top: 20px;
+    /* margin: 35px auto 10px; */
+    width: 100%;
+    box-sizing: border-box;
+    display: table;
 }
-.Benefits_row_1{
-margin: 20px 0;
-margin-bottom: 40px;
-display: table-row;
-vertical-align: middle; 
-font-size: xxx-large;
+.Benefits_row_1 {
+    margin: 20px 0px;
+    margin-bottom: 40px;
+    display: table-row;
+    vertical-align: middle;
+    font-size: xxx-large;
 }
-.Benefits_row_2{
-margin: 20px 0;
-/*padding-top: 20px;*/
-display: table-row;
-vertical-align: middle; 
+.Benefits_row_2 {
+    margin: 20px 0;
+    /*padding-top: 20px;*/
+    display: table-row;
+    vertical-align: middle;
 }
-.Benefits_subtitle{
-margin-bottom: 30px;
-padding: 10px 15px;
-box-sizing: border-box;
-width: 33.33333333333333%;
-display: table-cell;
-vertical-align: middle; 
-font-size: x-large;
-font-weight: 600;
-line-height: 1 em;
+.Benefits_subtitle {
+    margin-bottom: 30px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    width: 33.33333333333333%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: x-large;
+    font-weight: 600;
+    line-height: 1 em;
 }
-.Benefits_item{
-text-align: center !important;
-margin-bottom: 30px;
-padding: 13px 15px;
-box-sizing: border-box;
-width: 33.33333333333333%;
-display: table-cell;
-vertical-align: middle;
-min-height: 1px;
-line-height: 1.5;
-opacity: 1;
+.Benefits_item {
+    text-align: center !important;
+    margin-bottom: 30px;
+    padding: 13px 15px;
+    box-sizing: border-box;
+    width: 33.33333333333333%;
+    display: table-cell;
+    vertical-align: middle;
+    min-height: 1px;
+    line-height: 1.5;
+    opacity: 1;
 }
-.Benefits_item i{
-height: 50px;
-width: 15%;
-padding-right: 30px;
-padding-top: 10px;
-float: left;
-font-size: 50px;
-font-weight: 500;
-text-align: center;
-display: inline !important;
+.Benefits_item i {
+    height: 50px;
+    width: 15%;
+    padding-right: 30px;
+    padding-top: 10px;
+    float: left;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    display: inline !important;
 }
-.Benefits_item i:hover{
-color: #FFA500; /* #ffffff */
+.Benefits_item i:hover {
+    color: #FFA500;
+    /* #ffffff */
 }
-.Benefits_text{
-padding-left: 150px !important;
-padding-right: 150px !important;
-/*text-align: justify;*/
-font-size: large;
-font-weight: 500;
-\: 67%;
-/* display: inline; */
-/* float: right; */
-/* position: relative; */
+.Benefits_text {
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+    /*text-align: justify;*/
+    font-size: large;
+    font-weight: 500;
+    \: 67%;
+    /* display: inline; */
+    /* float: right; */
+    /* position: relative; */
 }
-#CommodityGroups{
-margin: 30px 4%;
-display: inline;
-max-width: 100%;
+#CommodityGroups {
+    margin: 30px 4%;
+    display: inline;
+    max-width: 100%;
 }
-#CommodityGroups_wrap{width: 100%;margin: 0 auto;margin-top: 40px;display: inline-block;max-width: 100%;}
-.CommodityGroups_icons_line_1,.CommodityGroups_icons_line_2,.CommodityGroups_icons_line_3{margin: 0 auto;display: flex;width: 90%;min-height: 250px;line-height: 150px;}
-.CommodityGroups_icons{margin: 0 auto;padding: 5px 10px;width: 12%;display: block;text-align: center;font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";font-size: large;font-weight: 700;line-height: 1;border-radius: 147px;}
-.commodity_image_circle{
-border-radius: 50%;
+#CommodityGroups_wrap {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: inline-block;
+    max-width: 100%;
 }
-#WhyUs{margin: 60px 10px 40px;max-width: 100%;}
-#Grounds{
-margin: 0 auto;
-width: 100%;
-min-height: 250px;
-display: block;
-opacity:;
+.CommodityGroups_icons_line_1,.CommodityGroups_icons_line_2,.CommodityGroups_icons_line_3 {
+    margin: 0 auto;
+    display: flex;
+    width: 90%;
+    min-height: 250px;
+    line-height: 150px;
 }
-#Grounds_row_circles{
-margin: 40px 4% 20px;
-padding: 0;
-max-width: 100%;
-display: block;
+.CommodityGroups_icons {
+    margin: 0 auto;
+    padding: 5px 10px;
+    width: 12%;
+    display: block;
+    text-align: center;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    font-size: large;
+    font-weight: 700;
+    line-height: 1;
+    border-radius: 147px;
 }
-.Grounds_circles{
-margin: 0;
-vertical-align: middle;
-display: table-cell;
+.commodity_image_circle {
+    border-radius: 50%;
 }
-.Grounds_circles_box{
-margin: 10px 20px;
-width: 250px;
-height: 250px;
-display: table;
+#WhyUs {
+    margin: 60px 10px 40px;
+    max-width: 100%;
 }
-.Grounds_circles_border{
-width: 100%;
-height: 240px;
-border: 1px #FFA500;
-border-radius: 125px;
-background: #FFA500;
-vertical-align: middle;
-text-align: middle;
-opacity: 0.7;
+#Grounds {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 250px;
+    display: block;
+    opacity: ;
 }
-.Grounds_circles_content{margin: auto 0;padding: 70px 15px 10px;text-align: center;font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";font-size: x-large;font-weight: 600;line-height: 35px;/* display: table-cell; */vertical-align: middle;}
-#Clients{height: 551px;/* margin: 30px 10px; */width: 100%;}
-.Grounds_video{
-margin: 30px 0 0;
-width: 100%;
-height: 210px;
-display: flex;
-/* float: left; */
-min-height: 210px;
-box-sizing:;
+#Grounds_row_circles {
+    margin: 40px 4% 20px;
+    padding: 0;
+    max-width: 100%;
+    display: block;
 }
-.Grounds_video_1,.Grounds_video_2,.Grounds_video_3{
-margin: 15px;
-width: 100%;
-height: 200px;
-display: inline;
-float: left;
-min-height: 200px;
+.Grounds_circles {
+    margin: 0;
+    vertical-align: middle;
+    display: table-cell;
 }
-.Testimonials{
-margin: 0;
-width: 100%;
-height: 230px;
-display: flex;
-box-sizing: border-box;
+.Grounds_circles_box {
+    margin: 10px 20px;
+    width: 250px;
+    height: 250px;
+    display: table;
 }
-.Testimonial_box{
-width: inherit;
-margin: 40px auto;
-display: inline;
-text-align: center;
+.Grounds_circles_border {
+    width: 100%;
+    height: 240px;
+    border: 1px #FFA500;
+    border-radius: 125px;
+    background: #FFA500;
+    vertical-align: middle;
+    text-align: middle;
+    opacity: 0.7;
 }
-.Testimonial_1,.Testimonial_2,.Testimonial_3{
-margin: 15px auto;
-height: 280px;
-max-width: 400px;
-display: inline-block;
-min-height: 280px;
+.Grounds_circles_content {
+    margin: auto 0;
+    padding: 70px 15px 10px;
+    text-align: center;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    font-size: x-large;
+    font-weight: 600;
+    line-height: 35px;
+    /* display: table-cell; */
+    vertical-align: middle;
 }
-.Testimonial_image{
-margin: 3px;
-display: inline;
-float: left;
-border-radius: 100px;
+#Clients {
+    height: 551px;
+    /* margin: 30px 10px; */
+    width: 100%;
 }
-.image_circle{
-border-radius: 100px;
+.Grounds_video {
+    margin: 30px 0 0;
+    width: 100%;
+    height: 210px;
+    display: flex;
+    /* float: left; */
+    min-height: 210px;
+    box-sizing: ;
 }
-.Testimonial_icons{
-min-width: 240px;
-margin: 3px;
-display: inline;
-text-align: right;
-float: right;
+.Grounds_video_1,.Grounds_video_2,.Grounds_video_3 {
+    margin: 15px;
+    width: 100%;
+    height: 200px;
+    display: inline;
+    float: left;
+    min-height: 200px;
 }
-.Testimonial_icons i{
-padding-top: 5px;
-padding-right: 10px;
-font-size: x-large;
-color: #FFA500;
+.Testimonials {
+    margin: 0;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    box-sizing: border-box;
 }
-.Testimonial_icons i:hover{
-color: #000000;
+.Testimonial_box {
+    width: inherit;
+    margin: 40px auto;
+    display: inline;
+    text-align: center;
 }
-.Testimonial_quotation{
-max-height: 130px;
-margin: 3px;
-background-image: url(images/speech_bubble1.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-width: 250px;
-float: right;
-display: flex;
+.Testimonial_1,.Testimonial_2,.Testimonial_3 {
+    margin: 15px auto;
+    height: 280px;
+    max-width: 400px;
+    display: inline-block;
+    min-height: 280px;
 }
-.Testimonial_quotation p{
-height: 130px;
-padding: 30px 12px 3px;
-display: inline-block;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-font-size: 15px;
-font-weight: 400;
-line-height: 1.2;
-text-align: center;
+.Testimonial_image {
+    margin: 3px;
+    display: inline;
+    float: left;
+    border-radius: 100px;
 }
-#Distribution{
-margin-top: 45px;
-height: 578px;
-max-width:100%;
-display: block;}
-#Distribution_wrap{margin: 50px auto 0;width: 100%;display: block;}
-.Distribution_line_1,.Distribution_line_2,.Distribution_line_3{margin: 0 auto; width: 70%;height: 145px;line-height: 160px;display: flex;vertical-align: middle;}
-.Distribution_icon{
-margin: 0;
-padding: 5px 10px;
-float: left;
-display: block;
-box-sizing:;
+.image_circle {
+    border-radius: 100px;
 }
-#ContactForm{
-width: 100%;
-display: inline-block;
+.Testimonial_icons {
+    min-width: 240px;
+    margin: 3px;
+    display: inline;
+    text-align: right;
+    float: right;
 }
-.text_color{
-text-align: center;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-font-size: xx-large;
-font-weight: 900 !important;
-line-height: 1.5;
-color: #FF0000;
+.Testimonial_icons i {
+    padding-top: 5px;
+    padding-right: 10px;
+    font-size: x-large;
+    color: #FFA500;
 }
-#ContactForm_wrap{
-margin: 30px auto;
-width: 50%;
-display: block;
-text-align: left;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-font-size: large;
-font-weight: 400;
-line-height: 1.5;
+.Testimonial_icons i:hover {
+    color: #000000;
 }
-#ContactForm_wrap i{
-padding-top: 5px;
-padding-right: 10px;
-font-size: x-large;
-color: #FFA500;
+.Testimonial_quotation {
+    max-height: 130px;
+    margin: 3px;
+    background-image: url(images/speech_bubble1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    float: right;
+    display: flex;
 }
-.note{
-text-align: left;
-padding-left: 120px;
-font-size: small;
-font-weight: 400;
-line-height: 1.5;
+.Testimonial_quotation p {
+    height: 130px;
+    padding: 30px 12px 3px;
+    display: inline-block;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
 }
-input, textarea{
-width: 400px;
-height: 27px;
-background: #efefef;
-border: 1px solid #dedede;
-padding: 10px;
-margin-top: 3px;
-font-size: 0.9em;
-color: #3a3a3a;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+#Distribution {
+    margin-top: 45px;
+    height: 578px;
+    max-width: 100%;
+    display: block;
 }
-textarea{
-height: 90px;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+#Distribution_wrap {
+    margin: 50px auto 0;
+    width: 100%;
+    display: block;
 }
-.heading{
-padding-left: 200px;
+.Distribution_line_1,.Distribution_line_2,.Distribution_line_3 {
+    margin: 0 auto;
+    width: 70%;
+    height: 145px;
+    line-height: 160px;
+    display: flex;
+    vertical-align: middle;
 }
-.button{border: 0px;width: 64%;background-color: white;display: block;height: 55%;} .button: click{}
-#ContactInfo{
-margin: 30px;
-max-width: 100%;
-display: flex;
+.Distribution_icon {
+    margin: 0;
+    padding: 5px 10px;
+    float: left;
+    display: block;
+    box-sizing: ;
 }
-#WorkingHours{
-margin: 10px;
-padding: 25px 10px 5px;
-width: 15%;
-float: left;
-display: inline;
-text-align: left;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-font-size: large;
-font-weight: 400;
-line-height: 1.5;
+#ContactForm {
+    width: 100%;
+    display: inline-block;
 }
-#Map{
-margin: 15px;
-width: 60%;
-display: inline-block;
+.text_color {
+    text-align: center;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    font-size: xx-large;
+    font-weight: 900 !important;
+    line-height: 1.5;
+    color: #FF0000;
 }
-#googleMap{
-width: 70%;
+#ContactForm_wrap {
+    margin: 30px auto;
+    width: 50%;
+    display: block;
+    text-align: left;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    font-size: large;
+    font-weight: 400;
+    line-height: 1.5;
 }
-#Address{
-margin-left: 0px;
-margin-right: 3%;
-padding: 23px 10px 5px;
-width: 10%;
-float: right;
-/*clear: both;*/
-display: inline;
-text-align: left;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-font-size: large;
-font-weight: 400;
-line-height: 1.5;
-vertical-align: middle;
+#ContactForm_wrap i {
+    padding-top: 5px;
+    padding-right: 10px;
+    font-size: x-large;
+    color: #FFA500;
 }
-#Footer{
-margin: 0;
-width: 100%;
-min-height: 100px;
-display: block;
-background-color:#FFA500;
-text-align: center;
-clear: both;
-font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-font-size: x-small;
-color: #ffffff;
+.note {
+    text-align: left;
+    padding-left: 120px;
+    font-size: small;
+    font-weight: 400;
+    line-height: 1.5;
 }
-.sitelink{
-font-size: medium;
+input, textarea {
+    width: 400px;
+    height: 27px;
+    background: #efefef;
+    border: 1px solid #dedede;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 0.9em;
+    color: #3a3a3a;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+}
+textarea {
+    height: 90px;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+}
+.heading {
+    padding-left: 200px;
+}
+.button {
+    border: 0px;
+    width: 64%;
+    background-color: white;
+    display: block;
+    height: 55%;
+}
+
+.button: click {
+}
+#ContactInfo {
+    margin: 30px;
+    max-width: 100%;
+    display: flex;
+}
+#WorkingHours {
+    margin: 10px;
+    padding: 25px 10px 5px;
+    width: 15%;
+    float: left;
+    display: inline;
+    text-align: left;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    font-size: large;
+    font-weight: 400;
+    line-height: 1.5;
+}
+#Map {
+    margin: 15px;
+    width: 60%;
+    display: inline-block;
+}
+#googleMap {
+    width: 70%;
+}
+#Address {
+    margin-left: 0px;
+    margin-right: 3%;
+    padding: 23px 10px 5px;
+    width: 10%;
+    float: right;
+    /*clear: both;*/
+    display: inline;
+    text-align: left;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    font-size: large;
+    font-weight: 400;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+#Footer {
+    margin: 0;
+    width: 100%;
+    min-height: 100px;
+    display: block;
+    background-color: #FFA500;
+    text-align: center;
+    clear: both;
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    font-size: x-small;
+    color: #ffffff;
+}
+.sitelink {
+    font-size: medium;
 }
