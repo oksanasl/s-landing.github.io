@@ -28,7 +28,7 @@ img {
     -moz-background-size: 100%;
     /* Firefox 3.6+ */
     -webkit-background-size: 100%;
-    /* Safari 3.1+ ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¸ Chrome 4.0+ */
+    /* Safari 3.1+ ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ Chrome 4.0+ */
     -o-background-size: 100%;
     /* Opera 9.6+ */
     background-size: 100%;
@@ -219,25 +219,25 @@ img {
     margin: 0 auto;
     width: 100%;
     min-height: 250px;
-    display: block;
-    opacity: ;
+    opacity:;
 }
 #Grounds_row_circles {
     margin: 40px 4% 20px;
     padding: 0;
     max-width: 100%;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
 .Grounds_circles {
     margin: 0;
     vertical-align: middle;
-    display: table-cell;
+    /* display: table-cell; */
 }
 .Grounds_circles_box {
     margin: 10px 20px;
-    width: 250px;
-    height: 250px;
-    display: table;
+    width: 248px;
+    height: 248px;
+    /* display: table; */
 }
 .Grounds_circles_border {
     width: 100%;
@@ -264,6 +264,7 @@ img {
     height: 551px;
     /* margin: 30px 10px; */
     width: 100%;
+    margin-bottom: 15px;
 }
 .Grounds_video {
     margin: 30px 0 0;
@@ -349,11 +350,10 @@ img {
 }
 #Distribution {
     overflow: hidden;
-    padding-top: 35px;
-    /* margin-top: 45px; */
-    height: 578px;
+    margin-top: 162px;
+    height: 577px;
     width: 100%;
-    /* display: block; */
+    display: block;
 }
 #Distribution_wrap {
     margin: 50px auto 0;
