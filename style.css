@@ -149,8 +149,8 @@
     display: inline !important;
 }
 .Benefits_item i:hover {
-    color: #FFA500;
-    /* #ffffff */
+    /*color: #FFA500;*/
+    color: #ffffdd;
 }
 .Benefits_text {
     padding-left: 150px !important;
@@ -334,10 +334,11 @@
     text-align: center;
 }
 #Distribution {
-    margin-top: 45px;
+    padding-top: 35px;
+    /* margin-top: 45px; */
     height: 578px;
-    max-width: 100%;
-    display: block;
+    width: 100%;
+    /* display: block; */
 }
 #Distribution_wrap {
     margin: 50px auto 0;
@@ -471,7 +472,7 @@ textarea {
     text-align: center;
     clear: both;
     font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-    font-size: x-small;
+    font-size: small;
     color: #ffffff;
 }
 .sitelink {
