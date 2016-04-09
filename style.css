@@ -15,7 +15,7 @@
     -moz-background-size: 100%;
     /* Firefox 3.6+ */
     -webkit-background-size: 100%;
-    /* Safari 3.1+ ÃƒÂÃ‚Â¸ Chrome 4.0+ */
+    /* Safari 3.1+ ÃƒÆ’Ã‚ÂÃƒâ€šÃ‚Â¸ Chrome 4.0+ */
     -o-background-size: 100%;
     /* Opera 9.6+ */
     background-size: 100%;
@@ -37,6 +37,7 @@
     line-height: 1.7;
 }
 .Subtitle {
+    width: 100%;
     text-align: center;
     font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
     font-style: normal;
@@ -334,6 +335,7 @@
     text-align: center;
 }
 #Distribution {
+    overflow: hidden;
     padding-top: 35px;
     /* margin-top: 45px; */
     height: 578px;
