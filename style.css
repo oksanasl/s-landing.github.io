@@ -106,7 +106,10 @@ img {
     box-sizing: border-box;
     text-align: center;
     font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-    background-color: #ffa31a;
+	background: linear-gradient(to bottom, #ffa31a, #ffd699);
+	/*alternative bottom-color: yellow*/
+	/* #f1da36 */ 
+    /*background-color: #ffa31a;*/
 }
 #Benefits_table {
     padding-top: 20px;
@@ -350,7 +353,7 @@ img {
 }
 #Distribution {
     overflow: hidden;
-    margin-top: 162px;
+    margin-top: 70px;
     height: 577px;
     width: 100%;
     display: block;
@@ -465,9 +468,9 @@ textarea {
 }
 #Address {
     margin-left: 0px;
-    margin-right: 3%;
+    margin-right: 2%;
     padding: 23px 10px 5px;
-    width: 10%;
+    width: 13%;
     float: right;
     /*clear: both;*/
     display: inline;
