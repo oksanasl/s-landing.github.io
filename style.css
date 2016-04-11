@@ -106,7 +106,7 @@ img {
     box-sizing: border-box;
     text-align: center;
     font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-	background: linear-gradient(to bottom, #ffa31a, #ffd699);
+	background: linear-gradient(to bottom, #FFA500, #ffd699);
 	/*alternative bottom-color: yellow*/
 	/* #f1da36 */ 
     /*background-color: #ffa31a;*/
@@ -250,7 +250,7 @@ img {
     background: #FFA500;
     vertical-align: middle;
     text-align: middle;
-    opacity: 0.7;
+    opacity: 1;
 }
 .Grounds_circles_content {
     margin: auto 0;
@@ -262,6 +262,7 @@ img {
     line-height: 35px;
     /* display: table-cell; */
     vertical-align: middle;
+	opacity: 1;
 }
 #Clients {
     height: 551px;
@@ -495,4 +496,5 @@ textarea {
 }
 .sitelink {
     font-size: medium;
+	color: #666666;
 }
