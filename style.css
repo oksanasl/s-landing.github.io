@@ -170,9 +170,9 @@ img {
     color: #ffffdd;
 }
 .Benefits_text {
-    padding-left: 150px !important;
-    padding-right: 150px !important;
-    /*text-align: justify;*/
+    /* padding-left: 30px !important; */
+    padding-right: 6% !important;
+    /* text-align: justify; */
     font-size: large;
     font-weight: 500;
     \: 67%;
@@ -232,36 +232,60 @@ img {
     flex-wrap: wrap;
 }
 .Grounds_circles {
-    margin: 0;
-    vertical-align: middle;
+    /*margin: 0;
+    vertical-align: middle;*/ /* 248px circles */
     /* display: table-cell; */
+	position: relative;
+	width: 15%;		/* desired width */
+}
+.Grounds_circles:before{
+	content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
 }
 .Grounds_circles_box {
-    margin: 10px 20px;
+    /*margin: 10px 20px;
     width: 248px;
-    height: 248px;
+    height: 248px;*/ /* 248px circles */
     /* display: table; */
+	position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 }
 .Grounds_circles_border {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    height: 240px;
+    /*height: 248px;*/ /* 248px circles */
     border: 1px #FFA500;
-    border-radius: 125px;
+    border-radius: 50%;
     background: #FFA500;
     vertical-align: middle;
     text-align: middle;
     opacity: 1;
+    overflow: hidden;
 }
 .Grounds_circles_content {
-    margin: auto 0;
-    padding: 70px 15px 10px;
-    text-align: center;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-    font-size: x-large;
-    font-weight: 600;
-    line-height: 35px;
-    /* display: table-cell; */
-    vertical-align: middle;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 70px 15px 10px;
+	text-align: center;
+	font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 130%;
+	/* display: table-cell; */
+	vertical-align: middle;
 	opacity: 1;
 }
 #Clients {
@@ -470,7 +494,7 @@ textarea {
 #Address {
     margin-left: 0px;
     margin-right: 2%;
-    padding: 23px 10px 5px;
+    padding: 23px 10px 5px 20px;
     width: 13%;
     float: right;
     /*clear: both;*/
@@ -484,6 +508,7 @@ textarea {
 }
 #Footer {
     margin: 0;
+	margin-bottom: 25px;
     width: 100%;
     min-height: 100px;
     display: block;
@@ -497,4 +522,5 @@ textarea {
 .sitelink {
     font-size: medium;
 	color: #666666;
+	text-decoration: none;
 }
