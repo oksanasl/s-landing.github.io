@@ -224,15 +224,19 @@ img {
     opacity:;
 }
 #Grounds_row_circles {
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 0;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
+    width: 85%;
 }
 .Grounds_circles_wrap{
     margin: 0 auto;
-    width: 15%;
+    /* width: 10%; */
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
 }
 .Grounds_circles {
 	/*width: 128px;
@@ -250,6 +254,9 @@ img {
 	height: 200px;
 	margin: 0;
 	padding: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .Grounds_circles:before{
 	/*content: "";
@@ -266,8 +273,8 @@ img {
 	right: 0; /* % screen width */
 	/*from sample*/
 	background-color: orange;
-	width: 90%;
-	height: 90%;
+	width: 100%;
+	height: 100%;
 	border-radius: 50%;
 	padding: 0;
 	/* border: 1px solid red; */
@@ -323,6 +330,7 @@ img {
 	font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
 	font-size: 26px;
 	line-height: 130%;*/ /* % screen width */
+    font-size: large;
     /* display: table-cell; */
     /*vertical-align: middle;
 	opacity: 1;*/ /* % screen width */
