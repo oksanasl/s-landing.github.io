@@ -28,7 +28,7 @@ img {
     -moz-background-size: 100%;
     /* Firefox 3.6+ */
     -webkit-background-size: 100%;
-    /* Safari 3.1+ ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ Chrome 4.0+ */
+    /* Safari 3.1+ ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ Chrome 4.0+ */
     -o-background-size: 100%;
     /* Opera 9.6+ */
     background-size: 100%;
@@ -221,39 +221,56 @@ img {
 #Grounds {
     margin: 0 auto;
     width: 100%;
-    min-height: 250px;
     opacity:;
 }
 #Grounds_row_circles {
-    margin: 40px 4% 20px;
+    margin: 0 auto;
     padding: 0;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 .Grounds_circles {
-    /*margin: 0;
+	/*width: 128px;
+    height: 128px;
+    margin: 0;
+    padding: 0;*/
+	/* border: 1px solid red; */
+	/*margin: 0;
     vertical-align: middle;*/ /* 248px circles */
-    /* display: table-cell; */
+	/* display: table-cell; */
 	position: relative;
-	width: 15%;		/* desired width */
+	width: 15%;		 /* % screen width */
+   /*from sample*/
+	width: 200px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
 }
 .Grounds_circles:before{
-	content: "";
+	/*content: "";
 	display: block;
-	padding-top: 100%; 	/* initial ratio of 1:1*/
-}
+	padding-top: 100%;*/ 	/* initial ratio of 1:1*/ /* % screen width */
 }
 .Grounds_circles_box {
-    /*margin: 10px 20px;
-    width: 248px;
-    height: 248px;*/ /* 248px circles */
-    /* display: table; */
+	margin: 0 auto;
+	width: 15%;
 	position:  absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
-	right: 0;
+	right: 0; /* % screen width */
+	/*from sample*/
+	background-color: orange;
+	width: 90%;
+	height: 90%;
+	border-radius: 50%;
+	padding: 0;
+	/* border: 1px solid red; */
+	/*margin: 10px 20px;
+    width: 248px;
+    height: 248px;*/ /* 248px circles */
+	/* display: table; */
 }
 .Grounds_circles_border {
     position:  absolute;
@@ -261,7 +278,7 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
+    width: 100%;  /* % screen width */
     /*height: 248px;*/ /* 248px circles */
     border: 1px #FFA500;
     border-radius: 50%;
@@ -270,23 +287,41 @@ img {
     text-align: middle;
     opacity: 1;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    /*position: relative;*/ /* % screen width */
+   
+   /*from sample*/
+    /*left: 15%;
+    top: 15%;*/
+    transform-style: preserve-3d;
+    /* border: 1px solid green; */
 }
 .Grounds_circles_content {
-	position: absolute;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
+    font-weight: 500;
+    padding: 4%;
+    /*position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	margin: auto;
-	padding: 70px 15px 10px;
+	padding: 15% 15px 10px;
 	text-align: center;
 	font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
 	font-size: 26px;
-	font-weight: 600;
-	line-height: 130%;
-	/* display: table-cell; */
-	vertical-align: middle;
-	opacity: 1;
+	line-height: 130%;*/ /* % screen width */
+    /* display: table-cell; */
+    /*vertical-align: middle;
+	opacity: 1;*/ /* % screen width */
 }
 #Clients {
     height: 551px;
