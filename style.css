@@ -13,8 +13,8 @@ img {
 
 * {
     margin: 0px auto;
-    padding: 0px;
-    /*max-width: 100%;*/
+    /*padding: 0px;*/
+    /* max-width: 100%; */
 }
 #body {
     width: 100%;
@@ -106,7 +106,9 @@ img {
     box-sizing: border-box;
     text-align: center;
     font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-	background: linear-gradient(to bottom, #FFA500, #ffd699);
+	/*background-image: url(images/benefits_background.jpg);
+    background-repeat: no-repeat;*/
+	/*background: linear-gradient(to bottom, #FFA500, #ffd699);*/
 	/*alternative bottom-color: yellow*/
 	/* #f1da36 */ 
     /*background-color: #ffa31a;*/
@@ -123,7 +125,8 @@ img {
     margin-bottom: 40px;
     display: table-row;
     vertical-align: middle;
-    font-size: xxx-large;
+    font-size: xx-large;
+	line-height: 2;
 }
 .Benefits_row_2 {
     margin: 20px 0;
@@ -317,9 +320,10 @@ img {
     top: 50%;
     transform: translateY(-50%);
     font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-    font-weight: 500;
+    font-weight: 600;
     padding: 4%;
-    /*position: absolute;
+    font-size: larger;
+	/*position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -330,7 +334,7 @@ img {
 	font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
 	font-size: 26px;
 	line-height: 130%;*/ /* % screen width */
-    font-size: large;
+    
     /* display: table-cell; */
     /*vertical-align: middle;
 	opacity: 1;*/ /* % screen width */
@@ -373,10 +377,10 @@ img {
 }
 .Testimonial_1,.Testimonial_2,.Testimonial_3 {
     margin: 15px auto;
-    height: 280px;
+    height: 175px;
     max-width: 400px;
     display: inline-block;
-    min-height: 280px;
+    min-height: 175px;
 }
 .Testimonial_image {
     margin: 3px;
@@ -414,8 +418,8 @@ img {
     display: flex;
 }
 .Testimonial_quotation p {
-    height: 130px;
-    padding: 30px 12px 3px;
+    height: 102px;
+    padding: 30px 12px 0px;
     display: inline-block;
     font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
     font-size: 15px;
@@ -425,19 +429,25 @@ img {
 }
 #Distribution {
     overflow: hidden;
-    margin-top: 70px;
+    margin-top: 50px;
     height: 577px;
     width: 100%;
     display: block;
 }
 #Distribution_wrap {
     margin: 50px auto 0;
-    width: 100%;
+    max-width: 100%;
+    display: flex;
+}
+#Distribution_icons{
+    width: auto;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .Distribution_line_1,.Distribution_line_2,.Distribution_line_3 {
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
     height: 145px;
     line-height: 160px;
     display: flex;
