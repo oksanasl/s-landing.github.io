@@ -106,8 +106,8 @@ img {
     box-sizing: border-box;
     text-align: center;
     font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Bookman Old Style";
-	/*background-image: url(images/benefits_background.jpg);
-    background-repeat: no-repeat;*/
+	background-image: url(images/benefits_background4.jpg);
+    background-repeat: no-repeat;
 	/*background: linear-gradient(to bottom, #FFA500, #ffd699);*/
 	/*alternative bottom-color: yellow*/
 	/* #f1da36 */ 
@@ -515,10 +515,10 @@ textarea {
 }
 .button {
     border: 0px;
-    width: 64%;
+    width: 55%;
     background-color: white;
     display: block;
-    height: 55%;
+    height: 44%;
 }
 
 .button: click {
