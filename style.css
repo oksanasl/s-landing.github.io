@@ -28,7 +28,7 @@ img {
     -moz-background-size: 100%;
     /* Firefox 3.6+ */
     -webkit-background-size: 100%;
-    /* Safari 3.1+ ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ Chrome 4.0+ */
+    /* Safari 3.1+ ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¸ Chrome 4.0+ */
     -o-background-size: 100%;
     /* Opera 9.6+ */
     background-size: 100%;
@@ -533,7 +533,8 @@ textarea {
 .button: click {
 }
 #ContactInfo {
-    margin: 30px;
+    /* margin: 30px; */
+    margin-bottom: 30px;
     max-width: 100%;
     display: flex;
 }
@@ -550,12 +551,26 @@ textarea {
     line-height: 1.5;
 }
 #Map {
-    margin: 15px;
+    /*margin: 15px;
     width: 60%;
-    display: inline-block;
+    display: inline-block;*/
+    width: 100%;
+    height: 360px;
+    margin-top: 70px;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0px);
+    background-color: #fff;
 }
 #googleMap {
-    width: 70%;
+    /*width: 70%;*/
+	position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 #Address {
     margin-left: 0px;
