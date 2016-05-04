@@ -4,6 +4,7 @@
 	  flex-direction: row;
    }
 }
+
 /*experimental make a decision to keep or remove*/
 img {
    max-width: 100%;
@@ -19,13 +20,20 @@ img {
 #body {
     width: 100%;
     background-color: #FFFFFF;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Yu Gothic UI Light", "Ubuntu Light", "PT Sans", sans-serif;
     max-width: 100%;
 	color: #777;
 }
+/*@font-face {
+font-family: 'Ubuntu';
+src: url('/fonts/Ubuntu-L.ttf');
+url('/fonts/Ubuntu-L.ttf') format('truetype');
+font-weight: normal;
+font-style: normal; 
+}*/
 #MainBanner {
     box-sizing: border-box;
-    background: url(images/TopBanner1.jpg) no-repeat;
+    /*background: url(images/TopBanner9.jpg) no-repeat; */
     -moz-background-size: 100%;
     /* Firefox 3.6+ */
     -webkit-background-size: 100%;
@@ -33,19 +41,46 @@ img {
     -o-background-size: 100%;
     /* Opera 9.6+ */
     background-size: 100%;
+	background-position: top left; 
     margin: 0 0 10px 0;
     background-position: 0px;
+}
+#man {
+    height: 750px;
+    background-image: url('images/TopBanner0.png');
+    background-position: 50% 0px;
+}
+.module-parallax {
+    background-attachment: fixed;
+}
+.module-man, .module-hands, .module-toolbelt {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+section {
+    display: block;
+}
+.TopTitle{
+    padding-top: 250px;
+}
+.fadeInDown{
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
 #Introduction {
     overflow: hidden;
     /* height: 541px; */
     /* margin: 0 5px; */
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Yu Gothic UI Light", "Ubuntu Light", "PT Sans", sans-serif;
     margin-bottom: 36px;
 }
 .Title {
     text-align: center;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Yu Gothic UI Light", "Ubuntu Light", "PT Sans", sans-serif;
 	color: #424242;
     font-style: normal;
     font-size: xx-large;
@@ -56,7 +91,7 @@ img {
 .Subtitle {
     width: 100%;
     text-align: center;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Yu Gothic UI Light", "Ubuntu Light", "PT Sans",  sans-serif;
 	color: #585858;
     font-style: normal;
     font-size: x-large;
@@ -78,7 +113,7 @@ img {
     display: inline;
     float: left;
     text-align: left;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Yu Gothic UI Light", "Ubuntu Light", "PT Sans", sans-serif;
 	color: #585858;
     font-size: x-large;
     font-weight: 500;
@@ -86,7 +121,7 @@ img {
 }
 .text_color_1 {
     text-align: center;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Yu Gothic UI Light", "Ubuntu Light", "PT Sans", sans-serif;
     font-size: x-large;
     font-weight: 900 !important;
     line-height: 1.5;
@@ -131,7 +166,7 @@ hr {
     max-width: 100%;
     box-sizing: border-box;
     text-align: center;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Yu Gothic UI Light", "Ubuntu Light", "PT Sans", sans-serif;
 	color: #585858;
     /*background-image: url(images/benefits_background6.jpg);
     background-size: cover;*/
@@ -241,7 +276,7 @@ hr {
     width: 12%;
     display: block;
     text-align: center;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Ubuntu Light", "PT Sans", "Yu Gothic UI Light", sans-serif;
 	color: #424242;
     font-size: large;
     font-weight: 700;
@@ -255,13 +290,22 @@ hr {
 	transform: translateY(-50%);
 }
 #WhyUs {
-    margin: 50px 10px 70px;
+    margin: 50px 10px 50px;
     max-width: 100%;
 }
 #Grounds {
     margin: 0 auto;
     width: 100%;
-    opacity:;
+	padding-bottom: 30px;
+}
+#hands {
+    height: auto;
+    background-image: url('images/background_parallax_2.png');
+    background-position: 50% 0px;
+}
+.MiddleTitle{
+    padding-top: 30px;
+	margin: auto;
 }
 #Grounds_row_circles {
     margin: 30px auto;
@@ -356,7 +400,7 @@ hr {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Ubuntu Light", "PT Sans", "Yu Gothic UI Light", sans-serif;
 	color: #424242;
     font-weight: 600;
     padding: 4%;
@@ -460,7 +504,7 @@ hr {
     height: 102px;
     padding: 30px 12px 0px;
     display: inline-block;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Ubuntu Light", "PT Sans", "Yu Gothic UI Light", sans-serif;
 	color: #2E2E2E;
     font-size: 15px;
     font-weight: 400;
@@ -507,9 +551,18 @@ hr {
     margin-top: 45px;
 	margin-bottom: 30px;
 }
+#toolbelt {
+    height: auto;
+    background-image: url('images/background_parallax_3.png');
+    background-position: 50% 0px;
+}
+.BottomTitle{
+	margin: auto;
+    padding-top: 50px;
+}
 .text_color {
     text-align: center;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Ubuntu Light", "PT Sans", "Yu Gothic UI Light", sans-serif;
     font-size: xx-large;
     font-weight: 900 !important;
     line-height: 1.5;
@@ -522,7 +575,7 @@ hr {
     width: 61%;
     display: block;
     text-align: left;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Ubuntu Light", "PT Sans", "Yu Gothic UI Light", sans-serif;
 	color: #424242;
     font-size: large;
     font-weight: 400;
@@ -553,11 +606,11 @@ input, textarea {
     margin-top: 3px;
     font-size: 0.9em;
     color: #3a3a3a;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Ubuntu Light", "PT Sans", "Yu Gothic UI Light", sans-serif;
 }
 textarea {
     height: 90px;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Ubuntu Light", "PT Sans", "Yu Gothic UI Light", sans-serif;
 }
 .heading {
     padding-left: 20px;
@@ -566,7 +619,7 @@ textarea {
 	margin: 10px auto 40px auto;
 	background-color: #FFA500;
 	padding: 10px 10px;
-	font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+	font-family: "Ubuntu Light", "PT Sans", "Yu Gothic UI Light", sans-serif;
 	font-size: 30px;
 	color: #fff;
 	box-shadow: none;
@@ -581,7 +634,7 @@ textarea {
 	padding: 10px 10px;
 	background-color: #fff;
 	color: #FFA500;
-	font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+	font-family: "Ubuntu Light", "PT Sans", "Yu Gothic UI Light", sans-serif;
 	font-size: 30px;
 	box-shadow: none;
 	border-radius: 0;
@@ -637,7 +690,7 @@ textarea {
     width: 25%;
     float: left;
     display: inline;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Ubuntu Light", "PT Sans", "Yu Gothic UI Light", sans-serif;
 	color: #585858;
     font-size: large;
     font-weight: 400;
@@ -653,18 +706,19 @@ textarea {
 #Footer {
     margin: 0;
 	margin-bottom: 25px;
-    width: 100%;
+	padding: 0 10px;
+    max-width: 100%;
     min-height: 100px;
     display: block;
     background-color: #FFA500;
     text-align: center;
     clear: both;
-    font-family: "Yu Gothic UI Light", "Microsoft YaHei UI Light", "Century Gothic";
+    font-family: "Ubuntu Light", "PT Sans", "Yu Gothic UI Light", sans-serif;
     font-size: small;
-    color: #ffffff;
+    color: #585858;
 }
 .sitelink {
     font-size: medium;
-	color: #666666;
+	color: #585858;
 	text-decoration: none;
 }
