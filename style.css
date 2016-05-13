@@ -63,16 +63,74 @@ font-style: normal;
 section {
     display: block;
 }
-.TopTitle{
-    padding-top: 300px;
+#MainMenu {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
 }
-.TopTitle h2{
-	padding-top: 35px;
-	color: #d9d9d9;
+.header .navbar-brand {
+	font-weight: 900;
 }
-.fadeInDown{
-    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+.header .navbar {
+	margin: 0;
+	border: none;
 }
+.page-section {
+	width: 100%;
+	min-height: 400px;
+	padding: 50px 0;
+	border-bottom: 10px solid #fff;
+}
+.page-section h1 {
+	font-size: 4em;
+	margin: 50px 0;
+}
+.page-section h1 span {
+	font-weight: 200;
+}
+.page-section h2 {
+	font-size: 3em;
+	font-weight: 900;
+	color: #fff;
+	margin: 0 0 30px;
+	text-shadow: 2px 2px 2px #000;
+}
+.page-section p {
+	font-size: 1.2em;
+	font-weight: 200;
+	margin: 0 25% 20px 0;
+}
+.page-section p.lead {
+	font-size: 1.8em;
+}
+.page-section p.caption {
+	color: #fff;
+	padding: 20px;
+	background: url(images/trans_black_25.png);
+	text-shadow: 1px 1px 1px #000;
+}
+ 
+@media (min-width: 768px) {
+	.header .navbar-brand {
+		padding-left: 0;
+	}
+	.navbar-nav {
+		float: right;
+	}
+}
+@media (max-width: 480px) {
+	.page-section h1 {
+		font-size:;
+	}
+	.page-section h2 {
+		font-size:;
+	}
+	.page-section p {
+		font-size:;
+		margin:;
+	}
+}
+
 .navbar {
     position: relative;
     min-height: 50px;
@@ -98,7 +156,7 @@ section {
 }	
 .navbar-inverse {
     background-color: rgba(255,255,255,0.95);
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.07);
+    /* box-shadow: 0px 4px 15px rgba(0,0,0,0.07); */
     font-family: 'Ubuntu-L';
     text-decoration: none;
 }
@@ -113,6 +171,7 @@ section {
     transform: translate3d(0,0,0);
     border-width: 0;
     top: 0;
+    /* float: right; */
 }
 .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
     padding-right: 0;
@@ -121,6 +180,7 @@ section {
 .navbar-header {
     float: left;
 }
+
 .navbar-brand{
     text-decoration: none;
     float: left;
@@ -130,6 +190,7 @@ section {
 .navbar-brand img {
     max-height: 50px;
 }
+
 .navbar-collapse {
     width: auto;
     float: right;
@@ -140,19 +201,19 @@ section {
     padding-left: 15px;
     overflow-x: visible;
     -webkit-overflow-scrolling: touch;
-    /* border-top: 1px solid transparent; */
     -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
     box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-    /* text-decoration: none; */
     color: #d9d9d9;
     font-weight: 700;
 	vertical-align: baseline;
 }
+/*
 .navbar-collapse.collapse {
     /* display: block!important; */
     height: 82px;
     overflow: visible!important;
-}
+}*/
+
 ul {
     -moz-padding-start: 0px;
     -webkit-padding-start: 0px;
@@ -176,14 +237,14 @@ ul.nav {
     list-style: none;
 }
 .navbar-nav {
-    float: left;
+    /* float: left; */
     margin: 0;
     display: flex;
 }
 .nav li {
     position: relative;
     display: block;
-	text-align: -webkit-match-parent;
+    text-align: -webkit-match-parent;
 }
 li {
     display: list-item;
@@ -192,15 +253,18 @@ li {
 li.page-scroll {
     list-style: none;
 }
+
 .navbar-inverse, .navbar-nav , .active a{
     background-color: #d9d9d9;
     opacity: 0.9;
 }
 .active a{
     background-color: #FFA500;
+	color: #FFA500;
 }
 .active{
     background-color: #FFA500;
+	color: #FFA500;
 }
 .navbar-inverse .navbar-nav>li>a {
     color: #333;
@@ -209,18 +273,19 @@ li.page-scroll {
     text-decoration: none;
 }
 .navbar-nav>li>a {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    line-height: 30px;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
+    line-height: 50px;
 }
 .nav>li>a {
-    padding: 30px 15px;
-	padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 0px 15px;
+    padding-top: 30px;
+    padding-bottom: 14px;
 }
 .nav>li>a:hover {
 	background-color: #FFA500;
 }
+*/
 #Introduction {
     overflow: hidden;
     /* height: 541px; */
@@ -228,21 +293,36 @@ li.page-scroll {
     font-family: 'Ubuntu-L';
     margin-bottom: 36px;
 }
+.TopTitle{
+    padding-top: 280px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.TopTitle h2{
+	/* padding-top: 35px; */
+	color: #d9d9d9;
+	padding-top: 30px;
+}
+.fadeInDown{
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
 .Title {
     text-align: center;
     font-family: 'Ubuntu-L';
-	color: #d9d9d9;
+    color: #d9d9d9;
     font-style: normal;
     font-size: xx-large;
     font-weight: 400;
     line-height: 1.3;
     margin: 20px auto;
+    margin-bottom: 40px;
+    /* letter-spacing: 0.18em; */
 }
 .Subtitle {
     width: 100%;
     text-align: center;
     font-family: 'Ubuntu-L';
-	color: #333333;
+    color: #333333;
     font-style: normal;
     font-size: x-large;
     font-weight: 400;
@@ -825,7 +905,7 @@ textarea {
     text-align: center;
     clear: both;
     font-family: 'Ubuntu-L';
-    font-size: small;
+    font-size: x-small;
     color: #fff;
 }
 .sitelink {
