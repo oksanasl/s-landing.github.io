@@ -45,7 +45,7 @@ font-style: normal;
 }
 #man {
     height: 750px;
-    background-image: url('images/TopBanner0.png');
+    background-image: url('images/TopBanner0.jpg');
     background-position: 50% 0px;
 }
 .module-parallax {
@@ -581,7 +581,7 @@ hr {
 }
 #hands {
     height: auto;
-    background-image: url('images/background_parallax_2.png');
+    background-image: url('images/background_parallax_2.jpg');
     background-position: 50% 0px;
 }
 .MiddleTitle{
@@ -892,7 +892,7 @@ hr {
 }
 #toolbelt {
     height: auto;
-    background-image: url('images/background_parallax_3.png');
+    background-image: url('images/background_parallax_3.jpg');
     background-position: 50% 0px;
 }
 .BottomTitle{
@@ -970,6 +970,7 @@ textarea {
 	border: 0;
 	height: 60px;
 	width: 423px;
+	cursor: pointer;
 }
 .button2 {
 	margin: 10px auto 40px auto;
@@ -984,8 +985,9 @@ textarea {
 	border: 1px solid #FFA500;
 	height: 60px;
 	width: 423px;
+	cursor: pointer;
 }
-.button: click {
+.button:click {
 }
 #ContactInfo {
     margin-top: 35px;
