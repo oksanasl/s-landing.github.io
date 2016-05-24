@@ -958,7 +958,7 @@ textarea {
     padding-left: 20px;
 }
 #button1{
-	margin: 10px auto 40px auto;
+	margin: 10px auto 20px auto;
 	background-color: #FFA500;
 	padding: 10px 10px;
 	font-family: 'Ubuntu-L';
@@ -970,9 +970,10 @@ textarea {
 	height: 60px;
 	width: 423px;
 	cursor: pointer;
-    border: 1px solid #FFA500;
-    font-family: 'Ubuntu-L';
+	border: 1px solid #FFA500;
+	font-family: 'Ubuntu-L';
 	text-decoration: none;
+	/* display: block; */
 }
 .hide{
     display: none;
@@ -983,33 +984,37 @@ textarea {
 }
 .modal {
   position: fixed;
-  top: 10%;
+  top: 27%;
   left: 50%;
   z-index: 1050;
-  width: 560px;
-  margin-left: -280px;
+  width: 600px;
+  height: 325px;
+  margin-left: -300px;
   background-color: #ffffff;
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, 0.3);
-  *border: 1px solid #999;
+  *
+  border: 1px solid #999;
   -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
   outline: none;
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   -webkit-background-clip: padding-box;
-     -moz-background-clip: padding-box;
-          background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
 }
 .modal-header {
   padding: 9px 15px;
   border-bottom: 1px solid #eee;
+  text-align: center;
+  font-family: 'Ubuntu';
 }
 .modal-header h2 {
   margin: 0;
-  line-height: 30px;
+  line-height: 50px;
 }
 .modal-header .close {
   margin-top: 2px;
@@ -1022,6 +1027,7 @@ textarea {
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
   opacity: 0.2;
+  border-radius: 50%;
   filter: alpha(opacity=20);
 }
 
@@ -1039,16 +1045,16 @@ textarea {
   padding: 15px;
   overflow-y: auto;
 }
-.modal.fade {
-  top: 25%;
+.fade {
+  /*top: -25%;*/
   -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
      -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
        -o-transition: opacity 0.3s linear, top 0.3s ease-out;
           transition: opacity 0.3s linear, top 0.3s ease-out;
 }
-.modal.fade.in {
+/*.modal.fade.in {
   top: 10%;
-}
+}*/
 .button2 {
 	margin: 10px auto 40px auto;
 	padding: 10px 10px;
