@@ -14,7 +14,7 @@ img {
 
 * {
     margin: 0px auto;
-    /*padding: 0px;*/
+    /* padding: 0px; */
     /* max-width: 100%; */
 }
 #body {
@@ -973,7 +973,7 @@ textarea {
 	border: 1px solid #FFA500;
 	font-family: 'Ubuntu-L';
 	text-decoration: none;
-	/* display: block; */
+	/*display: block;*/
 }
 .hide{
     display: none;
@@ -984,11 +984,11 @@ textarea {
 }
 .modal {
   position: fixed;
-  top: 27%;
+  top: 13%;
   left: 50%;
   z-index: 1050;
   width: 600px;
-  height: 325px;
+  height: 600px;
   margin-left: -300px;
   background-color: #ffffff;
   border: 1px solid #999;
@@ -997,7 +997,7 @@ textarea {
   border: 1px solid #999;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
-  border-radius: 6px;
+  border-radius: 50%;
   outline: none;
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
@@ -1005,30 +1005,45 @@ textarea {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
+  background-image: url('images/thankyou.jpg');
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.95;
 }
 .modal-header {
-  padding: 9px 15px;
-  border-bottom: 1px solid #eee;
+  padding: 28px 15px;
+  /* border-bottom: 1px solid #eee; */
   text-align: center;
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu-L';
+  height: 200px;
+  width: 600px;
+  overflow: hidden;
+  position: relative;
 }
 .modal-header h2 {
   margin: 0;
   line-height: 50px;
+  font-family: 'Ubuntu-L';
 }
 .modal-header .close {
-  margin-top: 2px;
+  /* margin-top: 2px; */
 }
 .close {
   float: right;
-  font-size: 20px;
+  /* z-index: 99999; */
+  font-size: 45px;
   font-weight: bold;
   line-height: 20px;
-  color: #000000;
+  color: #d9d9d9;
   text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
+  opacity: 0.6;
   border-radius: 50%;
   filter: alpha(opacity=20);
+  border: none;
+  background: none;
 }
 
 .close:hover,
@@ -1044,17 +1059,37 @@ textarea {
   max-height: 400px;
   padding: 15px;
   overflow-y: auto;
+  width: 600px;
+  height: 375px;
+  overflow: hidden;
 }
 .fade {
-  /*top: -25%;*/
+  /* top: -25%; */
   -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
-     -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
-       -o-transition: opacity 0.3s linear, top 0.3s ease-out;
-          transition: opacity 0.3s linear, top 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, top 0.3s ease-out;
+  transition: opacity 0.3s linear, top 0.3s ease-out;
 }
-/*.modal.fade.in {
+.modal.fade.in {
   top: 10%;
-}*/
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  /* z-index: 1029; */
+}
+.modal-backdrop.fade {
+  opacity: 0;
+}
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
 .button2 {
 	margin: 10px auto 40px auto;
 	padding: 10px 10px;
