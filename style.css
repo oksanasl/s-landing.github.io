@@ -42,6 +42,7 @@ font-style: normal;
 	background-position: top left; 
     margin: 0 0 10px 0;
     background-position: 0px;
+	height: 729px;
 }
 #man {
     height: 750px;
@@ -130,11 +131,25 @@ section {
 		margin:;
 	}
 }
-
+.affix {
+  position: fixed;
+  top:0;
+  width: 100%;
+  z-index: 9999 !important;
+  }
+.affix ~ .container-fluid {
+  position: relative;
+  top: 50px;
+}
+.affix-top{
+  position: absolute;
+  top: 800px;
+  width: 100%;
+}
 .navbar {
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 20px;
+    /* position: relative; */
+    /* min-height: 50px; */
+    margin-bottom: 0px;
     -webkit-transition: all .15s linear;
     -moz-transition: all .15s linear;
     -ms-transition: all .15s linear;
@@ -143,16 +158,19 @@ section {
     animation-name: slideUp;
     -webkit-animation-name: slideUp;
     opacity: 0.5;
-    margin-top: -80px;
+    margin-top: -50px;
     margin-bottom: 0px;
+    width: 100%;
 }
-.navbar.fixednav {
+.fixednav {
     animation-name: slideDown;
     -webkit-animation-name: slideDown;
     animation-duration: 0.5s;
     -webkit-animation-duration: 0.5s;
     z-index: 9999;
     margin-top: 0px;
+    background-color: #d9d9d9;
+    opacity: 0.9;
 }	
 .navbar-inverse {
     background-color: rgba(255,255,255,0.95);
@@ -285,13 +303,12 @@ li.page-scroll {
 .nav>li>a:hover {
 	background-color: #FFA500;
 }
-*/
 #Introduction {
     overflow: hidden;
     /* height: 541px; */
     /* margin: 0 5px; */
     font-family: 'Ubuntu-L';
-    margin-bottom: 36px;
+    /* margin-bottom: 36px; */
 }
 .TopTitle{
     padding-top: 280px;
@@ -1012,24 +1029,43 @@ textarea {
   -o-background-size: cover;
   background-size: cover;
   opacity: 0.95;
+  color: #333333;
 }
 .modal-header {
-  padding: 28px 15px;
+  padding: 75px 15px 5px;
   /* border-bottom: 1px solid #eee; */
   text-align: center;
   font-family: 'Ubuntu-L';
-  height: 200px;
+  height: auto;
   width: 600px;
   overflow: hidden;
   position: relative;
 }
-.modal-header h2 {
+.modal-header h1 {
   margin: 0;
   line-height: 50px;
   font-family: 'Ubuntu-L';
+  text-shadow: 1px 1px 0 #999999;
 }
 .modal-header .close {
   /* margin-top: 2px; */
+}
+.modal-body h2 {
+  margin: 0;
+  line-height: 50px;
+  font-family: 'Ubuntu-L';
+  text-shadow: 1px 1px 0 #999999;
+}
+.text_color_2 {
+	font-size: 100px;
+	/* font-weight: 900 !important; */
+	line-height: 1.2;
+	color: #FF0000;
+	display: block;
+}
+.text_color_3{
+  color: #FF0000;
+  font-size: xx-large;
 }
 .close {
   float: right;
@@ -1057,14 +1093,15 @@ textarea {
 .modal-body {
   position: relative;
   max-height: 400px;
-  padding: 15px;
+  padding: 0 15px;
   overflow-y: auto;
   width: 600px;
   height: 375px;
   overflow: hidden;
+  text-align: center;
 }
 .fade {
-  /* top: -25%; */
+  top: -25%;
   -webkit-transition: opacity 0.3s linear, top 0.3s ease-out;
   -moz-transition: opacity 0.3s linear, top 0.3s ease-out;
   -o-transition: opacity 0.3s linear, top 0.3s ease-out;
