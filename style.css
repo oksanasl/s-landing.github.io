@@ -33,19 +33,26 @@ font-style: normal;
 }
 #MainBanner {
 	box-sizing: border-box;
-    -moz-background-size: 100%;
+	-moz-background-size: 100%;
     /* Firefox 3.6+ */
-    -webkit-background-size: 100%;
+	-webkit-background-size: 100%;
 	-o-background-size: 100%;
     /* Opera 9.6+ */
-    background-size: 100%;
-	background-position: top left; 
-    margin: 0 0 10px 0;
-    background-position: 0px;
-	height: 729px;
+	background-size: 100%;
+	background-position: top left;
+	margin: 0 0 10px 0;
+	background-position: 0px;
+	height: 835px;
+{
+	position: fixed;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;  }
+	position: fixed;
 }
 #man {
-    height: 750px;
+    height: 845px;
     background-image: url('images/TopBanner0.jpg');
     background-position: 50% 0px;
 }
@@ -60,6 +67,32 @@ font-style: normal;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+#arrow_banner {
+    /*margin-top: 10%;*/
+    height: 100px;
+	vertical-align: middle;
+	border: 0;
+	text-align: center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.arrow {
+    cursor: pointer;
+    height: 100px;
+    display: flex;
+    padding-top: 72px;
+}
+.arrow .active{
+    background-color: transparent;
+}
+.arrow .active:hover, .arrow .active:active, .arrow .active:focus{
+    background-color: transparent;
+}
+a.arrow.active{
+    background-color: transparent;
 }
 section {
     display: block;
@@ -79,7 +112,7 @@ section {
 .page-section {
 	width: 100%;
 	min-height: 400px;
-	padding: 50px 0;
+	padding: 50px 0 40px;
 	border-bottom: 10px solid #fff;
 }
 .page-section h1 {
@@ -143,11 +176,11 @@ section {
 }
 .affix-top{
   position: absolute;
-  top: 800px;
+  top: 820px;
   width: 100%;
 }
 .navbar {
-    /* position: relative; */
+    position: relative;
     /* min-height: 50px; */
     margin-bottom: 0px;
     -webkit-transition: all .15s linear;
@@ -158,7 +191,7 @@ section {
     animation-name: slideUp;
     -webkit-animation-name: slideUp;
     opacity: 0.5;
-    margin-top: -50px;
+    margin-top: -70px;
     margin-bottom: 0px;
     width: 100%;
 }
@@ -168,7 +201,7 @@ section {
     animation-duration: 0.5s;
     -webkit-animation-duration: 0.5s;
     z-index: 9999;
-    margin-top: 0px;
+    margin-top: 0;
     background-color: #d9d9d9;
     opacity: 0.9;
 }	
@@ -311,9 +344,10 @@ li.page-scroll {
     /* margin-bottom: 36px; */
 }
 .TopTitle{
-    padding-top: 280px;
+    padding-top: 320px;
     padding-left: 150px;
     padding-right: 150px;
+    height: 530px;
 }
 .TopTitle h2{
 	/* padding-top: 35px; */
