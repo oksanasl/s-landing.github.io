@@ -4,7 +4,7 @@ function onScroll(event){
 			var currentLink = $(this);
 			var refElement = $(currentLink.attr("href"));
 			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-				$('body #MainMenu nav ul li a').removeClass("active");
+				$('body nav #myNavbar1 #myNavbar ul li a').removeClass("active");
 				currentLink.addClass("active");
 			}
 			else{
