@@ -440,15 +440,18 @@ hr {
 	border-width: 1px;
 }
 #Benefits {
-    margin-top: 40px;
+    /* padding-top: 40px; */
     margin-bottom: 15px;
-    padding: 0px 4%;
+    padding: 0 4% 0;
     max-width: 100%;
     box-sizing: border-box;
     text-align: center;
     font-family: 'Ubuntu-L';
     color: #333333;
     padding-bottom: 30px;
+}
+#Benefits hr, #CommodityGroups hr, #WhyUs hr, #Clients hr, #Distribution hr, #ContactInfo hr{
+    margin-bottom: 50px;
 }
 #Benefits_table {
     padding-top: 20px;
