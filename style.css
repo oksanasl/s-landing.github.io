@@ -56,7 +56,7 @@ font-style: normal;
 	/*height: 835px;*/
 }
 #man {
-    height: 845px;
+    height: 100%;
     background-image: url('images/TopBanner0.jpg');
     background-position: 50% 0px;
 }
