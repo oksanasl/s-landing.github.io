@@ -20,7 +20,7 @@ img {
 html, body{
   height:100%;
 }
-#body {
+body {
     width: 100%;
     background-color: #FFFFFF;
     font-family: 'Ubuntu-L';
@@ -35,7 +35,12 @@ font-weight: normal;
 font-style: normal; 
 }
 .top-section{
-  height:100%;
+  height: 100%;
+}
+.top-container{
+  display: block;
+  position: absolute;
+  width:100%;
 }
 #MainBanner {
 	box-sizing: border-box;
@@ -48,7 +53,7 @@ font-style: normal;
 	background-position: top left;
 	margin: 0 0 10px 0;
 	background-position: 0px;
-	height: 835px;
+	/*height: 835px;*/
 }
 #man {
     height: 845px;
@@ -67,22 +72,27 @@ font-style: normal;
     -o-background-size: cover;
     background-size: cover;
 }
-#arrow_banner {
-    /*margin-top: 10%;*/
-    height: 100px;
-	vertical-align: middle;
-	border: 0;
-	text-align: center;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
 .arrow {
     cursor: pointer;
     height: 100px;
     display: flex;
     padding-top: 10px;
+}
+#arrow_bottom {
+   position: relative; 
+}
+#arrow_banner {
+    margin: 0 auto;
+    height: 100px;
+    vertical-align: middle;
+    border: 0;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+	position: absolute;
+	bottom: 0;
 }
 .arrow .active{
     background-color: transparent;
@@ -343,6 +353,7 @@ li.page-scroll {
     /* margin: 0 5px; */
     font-family: 'Ubuntu-L';
     /* margin-bottom: 36px; */
+	margin-top: 70px;
 }
 .TopTitle{
     padding-top: 320px;
