@@ -806,17 +806,17 @@ hr {
     top: 50%;
     transform: translateY(-50%);
     font-family: 'Ubuntu-L';
-	color: #333333;
+    color: #333333;
     font-weight: 600;
     padding: 4%;
-    font-size: medium;
-	opacity: 0;
-	overflow: hidden;
-	-webkit-transition: all 0.15s ease-in-out;
-	-moz-transition: all 0.15s ease-in-out;
-	-ms-transition: all 0.15s ease-in-out;
-	-o-transition: all 0.15s ease-in-out;
-	transition: all 0.15s ease-in-out;
+    font-size: large;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -ms-transition: all 0.15s ease-in-out;
+    -o-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 
 #Clients {
@@ -1126,10 +1126,10 @@ textarea {
 
 .close:hover,
 .close:focus {
-  color: #000000;
+  color: #ff0000;
   text-decoration: none;
   cursor: pointer;
-  opacity: 0.4;
+  opacity: 0.9;
   filter: alpha(opacity=40);
 }
 .modal-body {
