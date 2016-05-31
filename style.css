@@ -448,10 +448,13 @@ hr {
     text-align: center;
     font-family: 'Ubuntu-L';
     color: #333333;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 #Benefits hr, #CommodityGroups hr, #WhyUs hr, #Clients hr, #Distribution hr, #ContactInfo hr{
     margin-bottom: 50px;
+}
+#ContactForm hr{
+    margin-bottom: 41px;
 }
 #Benefits_table {
     padding-top: 20px;
@@ -627,7 +630,7 @@ hr {
 	padding-top: 10px;
 }
 #WhyUs {
-    margin: 50px 0 50px;
+    margin: 51px 0 70px;
     max-width: 100%;
 }
 #Grounds {
@@ -817,11 +820,11 @@ hr {
 }
 
 #Clients {
-    height: 551px;
+    height: 571px;
     /* margin: 30px 10px; */
     width: 100%;
     margin-top: 45px;
-    margin-bottom: 60px;
+    margin-bottom: 69px;
 }
 .Grounds_video {
     margin: 30px 0 0;
