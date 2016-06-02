@@ -25,8 +25,8 @@ body {
     background-color: #FFFFFF;
     font-family: 'Ubuntu-L';
     max-width: 100%;
-	color: #333333;
-	min-height: 100vh;
+    color: #333333;
+    /* min-height: 100vh; */
 }
 @font-face {
 font-family: 'Ubuntu-L';
@@ -59,7 +59,7 @@ font-style: normal;
 	background-position: 0px;
 	/*height: 835px;*/
 	overflow: visible;
-	height: inherit;
+	min-height: inherit;
 }
 #man {
     height: 100%;
@@ -86,6 +86,7 @@ font-style: normal;
 }
 #arrow_bottom {
    position: relative; 
+   vertical-align: bottom;
 }
 #arrow_banner {
     margin: 0 auto;
@@ -366,8 +367,8 @@ li.page-scroll {
     padding-top: 320px;
     padding-left: 150px;
     padding-right: 150px;
-    height: 530px;
-	/*min-height: 75vh;*/
+    /* height: 530px; */
+    min-height: 77vh;
 }
 .TopTitle h2{
 	/* padding-top: 35px; */
