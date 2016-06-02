@@ -18,7 +18,10 @@ img {
     /* max-width: 100%; */
 }
 html, body{
-  height:100%;
+   min-height: 100%;
+   display: block;
+   width: auto;
+   height: 100%;
 }
 body {
     width: 100%;
@@ -27,6 +30,11 @@ body {
     max-width: 100%;
     color: #333333;
     /* min-height: 100vh; */
+    display: block;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    top: 0 !important;
+    position: relative;
 }
 @font-face {
 font-family: 'Ubuntu-L';
@@ -38,8 +46,10 @@ font-style: normal;
 .top-section{
 	min-height: 100vh;
 	width: 100%;
+	overflow: hidden;
 	/* margin: 0; */
-	/* position: relative; */
+	position: relative;
+	height: calc(100% + 0px);
 }
 /*.top-container{
   display: block;
@@ -55,11 +65,16 @@ font-style: normal;
     /* Opera 9.6+ */
 	background-size: 100%;
 	background-position: top left;
-	margin: 0 0 10px 0;
+	margin: 0;
 	background-position: 0px;
 	/*height: 835px;*/
-	overflow: visible;
-	min-height: inherit;
+	/* overflow: visible; */
+	/* min-height: inherit; */
+	/* top: 100%; */
+	/* bottom: -100%; */
+	/* display: table; */
+	width: 100%;
+	height: 100%;
 }
 #man {
     height: 100%;
@@ -77,6 +92,7 @@ font-style: normal;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    transform: matrix(1, 0, 0, 1, 0, 0);
 }
 .arrow {
     cursor: pointer;
@@ -207,7 +223,7 @@ section {
     animation-name: slideUp;
     -webkit-animation-name: slideUp;
     opacity: 0.5;
-    margin-top: -70px;
+    /* margin-top: -70px; */
     margin-bottom: 0px;
     width: 100%;
 }
@@ -360,7 +376,7 @@ li.page-scroll {
     /* margin: 0 5px; */
     font-family: 'Ubuntu-L';
     /* margin-bottom: 36px; */
-    margin-top: 70px;
+    /* margin-top: 70px; */
     display: block;
 }
 .TopTitle{
@@ -368,7 +384,8 @@ li.page-scroll {
     padding-left: 150px;
     padding-right: 150px;
     /* height: 530px; */
-    min-height: 77vh;
+    /*min-height: 77vh;*/
+    /* min-height: 100vh; */
 }
 .TopTitle h2{
 	/* padding-top: 35px; */
