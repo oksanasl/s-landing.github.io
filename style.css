@@ -398,20 +398,42 @@ li.page-scroll {
     width: 100%;
     position: relative;
 }
-
+.main-logo_container{
+	position: relative;
+}
+.main-logo{
+    width: 300px;
+	position: absolute;
+    left: 50px;
+    top: 20px;
+}
+.main-logo .active{
+    background-color: transparent;
+}
+.main-logo .active:hover, .main-logo .active:active, .main-logo .active:focus{
+    background-color: transparent;
+}
+a.main-logo.active{
+    background-color: transparent;
+}
 .TopTitle_container {
     position: absolute;
     /* display: table-cell; */
     vertical-align: middle;
-    width: 100%;
+    width: 92%;
     top: 55%;
     transform: translateY(-50%);
+    transform-style: preserve-3d;
+    padding: 0 4% 0;
 }
 .TopTitle h2{
 	/* padding-top: 35px; */
 	color: #d9d9d9;
 	padding-top: 30px;
 }
+/*.text_color_toptitle{
+  color: #FFA500;
+}*/
 .fadeInDown{
     text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
@@ -967,7 +989,7 @@ hr {
 	overflow: hidden;
 }
 #Distribution {
-    overflow: hidden;
+    /*overflow: hidden;*/
     margin-top: 50px;
     height: 577px;
     width: 100%;
@@ -1107,7 +1129,7 @@ textarea {
   margin-left: -300px;
   background-color: #ffffff;
   border: 1px solid #999;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  /* border: 1px solid rgba(0, 0, 0, 0.3); */
   *
   border: 1px solid #999;
   -webkit-border-radius: 6px;
@@ -1120,14 +1142,16 @@ textarea {
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding-box;
   background-clip: padding-box;
-  background-image: url('images/thankyou.jpg');
+  /* background-image: url('images/thankyou.jpg'); */
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   opacity: 0.95;
-  color: #333333;
+  color: #e6e6e6;
+  background-color: transparent;
+  border: 2px solid #e6e6e6;
 }
 .modal-header {
   padding: 75px 15px 5px;
@@ -1135,7 +1159,7 @@ textarea {
   text-align: center;
   font-family: 'Ubuntu-L';
   height: auto;
-  width: 600px;
+  width: 575px;
   overflow: hidden;
   position: relative;
 }
@@ -1143,7 +1167,8 @@ textarea {
   margin: 0;
   line-height: 50px;
   font-family: 'Ubuntu-L';
-  text-shadow: 1px 1px 0 #999999;
+  /* text-shadow: 1px 1px 0 #999999; */
+  font-weight: 200;
 }
 .modal-header .close {
   /* margin-top: 2px; */
@@ -1152,10 +1177,11 @@ textarea {
   margin: 0;
   line-height: 50px;
   font-family: 'Ubuntu-L';
-  text-shadow: 1px 1px 0 #999999;
+  /* text-shadow: 1px 1px 0 #999999; */
+  font-weight: 200;
 }
 .text_color_2 {
-	font-size: 100px;
+	font-size: 130px;
 	/* font-weight: 900 !important; */
 	line-height: 1.2;
 	color: #FF0000;
@@ -1171,9 +1197,9 @@ textarea {
   font-size: 45px;
   font-weight: bold;
   line-height: 20px;
-  color: #d9d9d9;
-  text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.6;
+  color: #ff0000;
+  /* text-shadow: 0 1px 0 #ffffff; */
+  opacity: 0.9;
   border-radius: 50%;
   filter: alpha(opacity=20);
   border: none;
@@ -1193,7 +1219,7 @@ textarea {
   max-height: 400px;
   padding: 0 15px;
   overflow-y: auto;
-  width: 600px;
+  width: 563px;
   height: 375px;
   overflow: hidden;
   text-align: center;
