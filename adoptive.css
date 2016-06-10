@@ -1,0 +1,120 @@
+/*@media (min-height: 500px) and (max-height: 600px) {
+    h1 {
+    }
+@media (min-width: 1358px) and (max-width: 1388px) {
+    .arrow {
+        padding-top: 30px;
+    }
+@media (min-width: 246px) and (max-width: 1357px) {
+    .arrow {
+        padding-top: 0px;
+     }
+/*.TopTitle.Title {
+    margin: 0;
+    margin-bottom: 30px;
+}
+}*/
+
+@media screen and (max-height:680px) {
+     .Title {
+          font-size: 28px;
+     }
+     .main-logo {
+          width: 250px;
+     }
+}
+@media screen and (max-height:620px) {
+     .Title {
+          font-size: 24px;
+     }
+     .main-logo {
+          width: 200px;
+     }
+     #arrow_banner {
+          height: 80px;
+     }
+}
+@media screen and (max-height:538px) {
+     .Title {
+          font-size: 20px;
+     }
+     /*.Subtitle{
+          font-size: 15px;
+     }*/
+     .main-logo {
+          width: 200px;
+     }
+     #arrow_banner {
+          height: 80px;
+     }
+}
+
+@media screen and (max-width:930px) {
+     ul.nav {
+          font-size: 15px;
+     }
+}
+@media screen and (min-width:2560px) {
+     .Title {
+          font-size: 52px;
+     }
+     .Subtitle {
+          font-size: 40px;
+     }
+@media screen and (max-width:960px) {
+     #State_of_business {
+          margin-left: 20px;
+          font-size: 20px;
+     }
+     #Introduction.page-section {
+          padding: 0;
+     }
+     .CommodityGroups_icons h4 {
+          font-size: 17px;
+     }
+     .image_circle {
+          width: 52px;
+     }
+}
+
+
+@media screen and (max-width:1290px){
+     .navbar-telephone {
+          display: none;
+     }
+}
+@media (min-width:1049px) and (max-width:1133px) {
+     .navbar-brand {
+          padding-left: 10px;
+     }
+}
+@media screen and (max-width:1049px) {
+     .navbar-brand {
+          display: none;
+     }
+}
+
+     @media (max-width: 960px) and (max-height: 640px){
+
+     }
+
+/*@media (min-width: 768px) {
+	.header .navbar-brand {
+		padding-left: 0;
+	}
+	.navbar-nav {
+		float: right;
+	}
+}
+@media (max-width: 480px) {
+	.page-section h1 {
+		font-size:;
+	}
+	.page-section h2 {
+		font-size:;
+	}
+	.page-section p {
+		font-size:;
+		margin:;
+	}
+}*/
