@@ -198,6 +198,9 @@ section {
     transition: all .15s linear;
     animation-name: slideUp;
     -webkit-animation-name: slideUp;
+    -moz-animation-name: slideUp;
+    -o-animation-name: slideUp;
+    -ms-animation-name: slideUp;
     opacity: 0.5;
     /* margin-top: -70px; */
     width: 100%;
@@ -799,6 +802,9 @@ hr {
 	-webkit-transform: scale(0);
 	transform: scale(0);
 	-webkit-transition: opacity .1s ease-in-out;
+    -moz-transition: opacity .1s ease-in-out;
+    -o-transition: opacity .1s ease-in-out;
+    -ms-transition: opacity .1s ease-in-out;
 	opacity: 1;
 }
 .Grounds_circles_border_back{
