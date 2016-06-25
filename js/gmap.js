@@ -10,7 +10,7 @@ function initialize() {
   var marker = new google.maps.Marker({
     position: new google.maps.LatLng(49.576656, 25.624144),
     map: map,
-    title: 'СТЕН - Будматеріали гуртом та в роздріб'
+    title: "СТЕН - Будматеріали гуртом та в роздріб"
   });
 }
-google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, "load", initialize);
