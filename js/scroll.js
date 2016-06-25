@@ -7,7 +7,7 @@
  
 			$('a').each(function () {
 				$(this).removeClass('active');
-			})
+			});
 			$(this).addClass('active');
  
 			var target = this.hash;

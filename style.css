@@ -152,6 +152,7 @@ section {
 	min-height: 400px;
 	padding: 50px 0 40px;
 	border-bottom: 10px solid #fff;
+    box-sizing: border-box;
 }
 .page-section h1 {
 	font-size: 4em;
@@ -208,8 +209,14 @@ section {
 .fixednav {
     animation-name: slideDown;
     -webkit-animation-name: slideDown;
+    -moz-animation-name: slideDown;
+    -o-animation-name: slideDown;
+    -ms-animation-name: slideDown;
     animation-duration: 0.5s;
     -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
     z-index: 9999;
     margin-top: 0;
     background-color: #d9d9d9;
@@ -230,7 +237,10 @@ section {
     z-index: 1030;
     -webkit-transform: translate3d(0,0,0);
     -o-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+
     border-width: 0;
     top: 0;
     /* float: right; */
@@ -269,6 +279,12 @@ section {
     overflow-x: visible;
     -webkit-overflow-scrolling: touch;
     -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    -moz-overflow-scrolling: touch;
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    -o-overflow-scrolling: touch;
+    -o-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    -ms-overflow-scrolling: touch;
+    -ms-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
     box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
     color: #d9d9d9;
     font-weight: 500;
@@ -296,7 +312,7 @@ ul, ol {
 }
 ul.nav {
     font-size: 1.187em;
-    text-align: -webkit-match-parent;
+    text-align: center;
 }
 .nav {
     padding-left: 0;
@@ -317,7 +333,7 @@ li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
-li.page-scroll {
+.page-scroll {
     list-style: none;
 }
 
@@ -400,6 +416,7 @@ a.main-logo.active{
     transform: translateY(-50%);
     transform-style: preserve-3d;
     padding: 0 4% 0;
+    box-sizing: border-box;
 }
 .TopTitle h2{
 	/* padding-top: 35px; */
@@ -444,7 +461,8 @@ a.main-logo.active{
     margin-bottom: 50px;
     padding: 5px 10px;
     width: 40%;
-    display: inline;
+    box-sizing: border-box;
+    display: block;
     float: left;
     text-align: left;
     font-family: 'Ubuntu-L', sans-serif;
@@ -486,6 +504,18 @@ hr {
 	-webkit-margin-after: 0.5em;
 	-webkit-margin-start: auto;
 	-webkit-margin-end: auto;
+    -moz-margin-before: 0.5em;
+    -moz-margin-after: 0.5em;
+    -moz-margin-start: auto;
+    -moz-margin-end: auto;
+    -o-margin-before: 0.5em;
+    -o-margin-after: 0.5em;
+    -o-margin-start: auto;
+    -o-margin-end: auto;
+    -ms-margin-before: 0.5em;
+    -ms-margin-after: 0.5em;
+    -ms-margin-start: auto;
+    -ms-margin-end: auto;
     border: 1px inset;
 }
 #Benefits {
@@ -519,12 +549,10 @@ hr {
     line-height: 2;
 }
 .Benefits_row_2 {
-    margin: 20px 0;
     display: table-row;
     vertical-align: middle;
 }
 .Benefits_subtitle {
-    margin-bottom: 30px;
     padding: 30px 15px;
     box-sizing: border-box;
     width: 33.33333333333333%;
@@ -625,8 +653,9 @@ hr {
     color: #333333;
 }
 .Benefits_text {
-    padding-left: 30px !important;
+    padding-left: 6% !important;
     padding-right: 6% !important;
+    box-sizing: border-box;
     font-size: 1.06em;
     font-weight: 500;
     width: 67%;
@@ -665,6 +694,7 @@ hr {
     font-weight: 700;
     line-height: 1;
     border-radius: 147px;
+    box-sizing: border-box;
 }
 .commodity_image_circle {
     border-radius: 50%;
@@ -739,7 +769,8 @@ hr {
     bottom: 0;
     right: 0;
     width: 100%; 
-    /*height: 248px;*/ 
+    /*height: 248px;*/
+    box-sizing: border-box;
     border: 1px #FFA500;
     background: #FFA500;
     vertical-align: middle;
@@ -879,7 +910,7 @@ hr {
     margin: 15px;
     width: 100%;
     height: 200px;
-    display: inline;
+    display: block;
     float: left;
     min-height: 200px;
 }
@@ -893,7 +924,7 @@ hr {
 .Testimonial_box {
     width: inherit;
     margin: 40px auto;
-    display: inline;
+    display: block;
     text-align: center;
 }
 .Testimonial_1,.Testimonial_2,.Testimonial_3 {
@@ -942,6 +973,7 @@ hr {
     height: 102px;
     padding: 37px 12px 0;
     display: inline-block;
+    box-sizing: border-box;
     font-family: 'Ubuntu-L', sans-serif;
     color: #333333;
     font-size: 0.875em;

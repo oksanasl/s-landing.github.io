@@ -1,0 +1,43 @@
+html, body{
+    max-height: 100%;
+    display: block;
+    width: auto;
+}
+body {
+    background-image: url('images/tools.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Ubuntu-L', sans-serif;
+    max-width: 100%;
+    /* min-height: 100vh; */
+}
+@font-face {
+    font-family: 'Ubuntu-L', sans-serif;
+    src: url('fonts/Ubuntu-L.ttf');
+url('fonts/Ubuntu-L.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+#notification_container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    display: block;
+    margin-bottom: 200px;
+    text-shadow: 1px 1px 0 #666;
+}
+#logo{
+    margin: 0 auto;
+    height: 100px;
+}
+#404{
+    font-size: 3em;
+}
+#notification{
+    font-family: 'Ubuntu-L', sans-serif;
+    color: #FFA500;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: 100;
+}
