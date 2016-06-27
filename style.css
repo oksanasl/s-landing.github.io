@@ -407,6 +407,21 @@ li {
 a.main-logo.active{
     background-color: transparent;
 }
+.flags_container{
+    float: right;
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.ukr_flag img, .rus_flag img{
+    width: 32px;
+    padding: 10px 6px;
+    text-decoration: none;
+}
+.ukr_flag, .rus_flag{
+    text-decoration: none;
+}
 .TopTitle_container {
     position: absolute;
     /* display: table-cell; */
