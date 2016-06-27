@@ -11,6 +11,7 @@ body {
     font-family: 'Ubuntu-L', sans-serif;
     max-width: 100%;
     /* min-height: 100vh; */
+    overflow-y: hidden;
 }
 @font-face {
     font-family: 'Ubuntu-L', sans-serif;
@@ -22,17 +23,31 @@ url('fonts/Ubuntu-L.ttf') format('truetype');
 #notification_container{
     margin-left: auto;
     margin-right: auto;
-    width: 700px;
+    margin-top: 4%;
+    width: 800px;
     display: block;
     margin-bottom: 200px;
-    text-shadow: 1px 1px 0 #666;
+    /*text-shadow: 1px 1px 0 #fff;*/
+}
+#logo_container {
+    width: 800px;
+    margin: 0 auto;
 }
 #logo{
-    margin: 0 auto;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
     height: 100px;
 }
-#404{
-    font-size: 3em;
+#logo img{
+    margin-left: auto;
+    margin-right: auto;
+}
+#number{
+    font-size: 100px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 500;
 }
 #notification{
     font-family: 'Ubuntu-L', sans-serif;
