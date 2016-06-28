@@ -92,6 +92,12 @@ font-style: normal;
     background-size: cover;
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
 .arrow {
     cursor: pointer;
     height: 100px;
@@ -410,23 +416,21 @@ a.main-logo.active{
 .flags_container{
     float: right;
     width: 100px;
-    height: 40px;
     text-decoration: none;
     margin-right: 15px;
 }
-.ukr_flag img, .rus_flag img{
-    width: 32px;
-    padding: 10px 6px;
-    text-decoration: none;
-}
 .ukr_flag, .rus_flag{
+    padding: 4px 10px;
     text-decoration: none;
+    font-size: 35px;
+    color: #FFA500;
+    font-weight: 700;
 }
 .TopTitle_container {
     position: absolute;
     /* display: table-cell; */
     vertical-align: middle;
-    width: 92%;
+    width: 100%;
     top: 55%;
     transform: translateY(-50%);
     transform-style: preserve-3d;
@@ -985,8 +989,8 @@ hr {
     display: flex;
 }
 .Testimonial_quotation p {
-    height: 102px;
-    padding: 37px 12px 0;
+    height: 131px;
+    padding: 39px 12px 0;
     display: inline-block;
     box-sizing: border-box;
     font-family: 'Ubuntu-L', sans-serif;
