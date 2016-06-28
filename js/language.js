@@ -8,7 +8,7 @@
  */
 function translator (langFlag) {
     $("html").attr('lang', langFlag);
-    var dataAttr = 'data-lang' + langFlag;
+    var dataAttr = 'data-lang-' + langFlag;
     var tags = $("[" + dataAttr + "]");
     $(tags).each(function(){
         $(this).html(
