@@ -428,6 +428,10 @@ a.main-logo.active{
     font-weight: 700;
     cursor: pointer;
 }
+.ukr_flag:hover, .rus_flag:hover{
+    font-size: 40px;
+    color: #ffc966;
+}
 .TopTitle_container {
     position: absolute;
     /* display: table-cell; */
