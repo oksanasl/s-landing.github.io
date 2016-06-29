@@ -4,16 +4,23 @@
 /**
  * Landing page language translator
  *
- * @param langFlag
+ * @param lang
  */
-function translator (langFlag) {
-    $("html").attr('lang', langFlag);
-    var dataAttr = 'data-lang-' + langFlag;
-    var tags = $("[" + dataAttr + "]");
-    langFlag = "lang-" + langFlag;
+function translator (lang) {
+    var tags = $("[data-lang-" + lang + "]");
+    $("html").attr('lang', lang);
+
     $(tags).each(function(){
-        $(this).html(
-            $(this).data(langFlag)
+        var tag = $(this);
+        var dataLangAttr = "lang-" + lang;
+        tag.html(
+            tag.data(dataLangAttr)
         );
+        if (tag.attr("placeholder") != undefined) {
+            tag.attr(
+                "placeholder",
+                tag.data(dataLangAttr)
+            ).text("");
+        }
     });
 };
