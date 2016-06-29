@@ -418,6 +418,7 @@ a.main-logo.active{
     width: 100px;
     text-decoration: none;
     margin-right: 15px;
+    cursor: hand;
 }
 .ukr_flag, .rus_flag{
     padding: 4px 10px;
@@ -425,6 +426,7 @@ a.main-logo.active{
     font-size: 35px;
     color: #FFA500;
     font-weight: 700;
+    cursor: pointer;
 }
 .TopTitle_container {
     position: absolute;
