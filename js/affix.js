@@ -86,7 +86,4 @@ $(window).on('load', function () {
 
         $spy.affix(data)
     })
-});
-}(window.jQuery);/**
- * Created by Окси on 27.05.2016.
- */
+})

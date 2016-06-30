@@ -6,7 +6,6 @@
  *
  * @param lang
  */
-<<<<<<< Updated upstream
 function translator (lang) {
     var tags = $("[data-lang-" + lang + "]");
     $("html").attr('lang', lang);
