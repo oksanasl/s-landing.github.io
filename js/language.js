@@ -8,7 +8,7 @@
  */
 function translator (lang) {
     var tags = $("[data-lang-" + lang + "]");
-    $("html").attr('lang', lang);
+    $("html").attr("lang", lang);
 
     $(tags).each(function(){
         var tag = $(this);
@@ -16,11 +16,11 @@ function translator (lang) {
         tag.html(
             tag.data(dataLangAttr)
         );
-        if (tag.attr("placeholder") != undefined) {
+        if (typeof tag.attr("placeholder") !== "undefined") {
             tag.attr(
                 "placeholder",
                 tag.data(dataLangAttr)
             ).text("");
         }
-    });
+    })
 };
