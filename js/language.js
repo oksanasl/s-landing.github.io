@@ -22,5 +22,5 @@ function translator (lang) {
                 tag.data(dataLangAttr)
             ).text("");
         }
-    })
-};
+    });
+}
