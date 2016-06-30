@@ -24,6 +24,7 @@
 <script src="js/modal.js"></script>
 <script src="js/hideOff.js"></script>
 <script src="js/affix.js"></script>
+<!--<script src="js/placeholder.js"></script>-->
 <script src="js/image_first.js"></script>
 <script src="js/bootstrap.js" type="text/javascript"></script> 
 
@@ -41,7 +42,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-	<nav class="navbar navbar-inverse affix-top hide" data-spy="affix" data-offset-top="820" role="navigation">
+	<nav class="navbar navbar-inverse affix-top" data-spy="affix" data-offset-top="820" role="navigation">
 		<div id="myNavbar1" class="navbar-fixed-top fixednav">
 			<!--<div class="container container-fluid">-->
 			<div id="myNavbar" class="collapse navbar-collapse">
@@ -91,7 +92,7 @@
 				<h1 data-lang-ru="Поздравляем!" data-lang-ua="Вітаємо!">Вітаємо!</h1>
 			</div>
 			<div class="modal-body">
-				<h2 data-lang-ru="Вы получили скидку" data-lang-ua="Ви отримали знижку">Ви отримали знижку <span class="text_color_2">5%</span></h2>
+				<h2 data-lang-ru='Вы получили скидку <span class="text_color_2">5%</span>' data-lang-ua='Ви отримали знижку <span class="text_color_2">5%</span>'>Ви отримали знижку <span class="text_color_2">5%</span></h2>
 				<h2 data-lang-ru="Мы свяжемся с Вами до 10 минут" data-lang-ua="Ми зв'яжемося з вами протягом 10 хв">Ми зв'яжемося з вами протягом 10 хв</h2>
 			</div>
 	</div>
@@ -112,9 +113,9 @@
 						<div class="TopTitle_container">
 							<div class="Title">
 								<h1 data-lang-ru="КАЧЕСТВЕННЫЕ СТРОЙМАТЕРИАЛЫ" data-lang-ua="ЯКІСНІ БУДМАТЕРІАЛИ">ЯКІСНІ БУДМАТЕРІАЛИ</h1>
-								<h1><span class="text_color_toptitle" data-lang-ru="по доступным ценам" data-lang-ua="за доступними цінами">за доступними цінами</span></h1>
+								<h1><span class="text_color_toptitle" data-lang-ru="по доступным ценам" data-lang-ua="<span style='font-size:0.8em'>за доступними цінами</span>">за доступними цінами</span></h1>
 							</div>
-							<hr class="hide" id="hr_man">
+							<hr id="hr_man">
 							<div class="Subtitle">
 								<h2 data-lang-ru="40 Брендов, 50 Строительных групп, 3500 Товаров" data-lang-ua="40 Брендів, 50 Груп будівельних товарів, 3500 Товарів">
 									40 Брендів, 50 Груп будівельних товарів, 3500 Товарів</h2>
@@ -687,10 +688,9 @@
 							<tr>
 								<td class="heading" align="left" valign="top" data-lang-ru="Ваш комментарий" data-lang-ua="Ваш коментар">Ваш коментар</td>
 								<td><p class="frame"></p><p>
-									<textarea name="Comment" id="Comment"
-											  placeholder="Якщо у Вас є питання щодо роботи магазину, цін, знижок, або Ви хочете щоб Вам передзвонили трохи пізніше, будь ласка, напишіть тут."
-											  data-lang-ru="Если у Вас есть вопрос относительно работы магазина, цен, скидок, или Вы хотите чтобы Вам перезвонили чуть позже, пожалуйста напишите здесь."
-											  data-lang-ua="Якщо у Вас є питання щодо роботи магазину, цін, знижок, або Ви хочете щоб Вам передзвонили трохи пізніше, будь ласка, напишіть тут."></textarea></p></td>
+									<textarea name="Comment" id="Comment" class="text_placeholder"
+											  placeholder="Якщо у Вас є питання щодо роботи магазину, цін, знижок, або Ви хочете щоб Вам передзвонили трохи пізніше, будь ласка, напишіть тут.">
+									</textarea></p></td>
 							</tr>
 							<tr> 
 								<td></td>

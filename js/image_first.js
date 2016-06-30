@@ -3,7 +3,6 @@
  */
 (function (window, $) {
     $(function () {
-        
         $('#man ').on('load', function(alert){
             $(".navbar").toggleClass('.show');
             $(".arrow").toggleClass('.show');
