@@ -44,7 +44,7 @@ Affix.prototype.checkPosition = function () {
     }
 
     this.affixed = affix;
-    this.unpin = affix == "bottom" ? position.top - scrollTop : null;
+    this.unpin = affix === "bottom" ? position.top - scrollTop : null;
 
     this.$element.removeClass(reset).addClass("affix" + (affix ? "-" + affix : ""));
 };
