@@ -38,7 +38,7 @@ body {
 }
 @font-face {
 font-family: 'Ubuntu-L', sans-serif;
-src: url('fonts/Ubuntu-L.ttf');
+src: url('../fonts/Ubuntu-L.ttf');
 url('fonts/Ubuntu-L.ttf') format('truetype');
 font-weight: normal;
 font-style: normal; 
@@ -77,7 +77,7 @@ font-style: normal;
 }
 #man {
     height: 100%;
-    background-image: url('images/TopBanner0.jpg') 50% 0;
+    background-image: url('../images/TopBanner0.jpg') 50% 0;
 }
 .module-parallax {
     background-attachment: fixed;
@@ -742,7 +742,7 @@ hr {
 }
 #hands {
     height: auto;
-    background-image: url('images/background_parallax_2.jpg');
+    background-image: url('../images/background_parallax_2.jpg');
     background-position: 50% 0;
 }
 .MiddleTitle{
@@ -987,7 +987,7 @@ hr {
 .Testimonial_quotation {
     max-height: 130px;
     margin: 3px;
-    background-image: url(images/speech_bubble1.jpg);
+    background-image: url(../images/speech_bubble1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 250px;
@@ -1047,7 +1047,7 @@ hr {
 }
 #toolbelt {
     height: auto;
-    background-image: url('images/background_parallax_3.jpg');
+    background-image: url('../images/background_parallax_3.jpg');
     background-position: 50% 0;
 }
 .BottomTitle{

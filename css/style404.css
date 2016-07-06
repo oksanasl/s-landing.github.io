@@ -4,7 +4,7 @@ html, body{
     width: auto;
 }
 body {
-    background-image: url('images/tools.jpg');
+    background-image: url('../images/tools.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,7 +15,7 @@ body {
 }
 @font-face {
     font-family: 'Ubuntu-L', sans-serif;
-    src: url('fonts/Ubuntu-L.ttf');
+    src: url('../fonts/Ubuntu-L.ttf');
 url('fonts/Ubuntu-L.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
