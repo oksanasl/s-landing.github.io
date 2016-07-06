@@ -36,17 +36,17 @@ Affix.prototype.checkPosition = function () {
 
     affix = this.unpin != null && (scrollTop + this.unpin <= position.top) ?
         false    : offsetBottom != null && (position.top + this.$element.height() >= scrollHeight - offsetBottom) ?
-        'bottom' : offsetTop != null && scrollTop <= offsetTop ?
-        'top'    : false;
+        "bottom" : offsetTop != null && scrollTop <= offsetTop ?
+        "top"    : false;
 
     if (this.affixed === affix) {
         return;
     }
 
     this.affixed = affix;
-    this.unpin = affix == 'bottom' ? position.top - scrollTop : null;
+    this.unpin = affix == "bottom" ? position.top - scrollTop : null;
 
-    this.$element.removeClass(reset).addClass('affix' + (affix ? '-' + affix : ''));
+    this.$element.removeClass(reset).addClass("affix" + (affix ? "-" + affix : ""));
 };
 
 
@@ -58,7 +58,7 @@ var old = $.fn.affix;
 $.fn.affix = function (option) {
     return this.each(function () {
         var $this = $(this);
-        var data = $this.data('affix');
+        var data = $this.data("affix");
         var options = typeof option == "object" && option;
         if (!data) {
             $this.data("affix", (data = new Affix(this, options)));
@@ -66,7 +66,7 @@ $.fn.affix = function (option) {
         if (typeof option == "string") {
             data[option]();
         }
-    })
+    });
 };
 
 $.fn.affix.Constructor = Affix;
@@ -89,7 +89,7 @@ $.fn.affix.noConflict = function () {
  * ============== */
 
 $(window).on("load", function () {
-    $('[data-spy="affix"]').each(function () {
+    $("[data-spy='affix']").each(function () {
         var $spy = $(this);
         var data = $spy.data();
 
