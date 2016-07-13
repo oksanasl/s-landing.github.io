@@ -16,9 +16,9 @@ if (array_key_exists('Subject', $_POST)) {
       mail($to, $subject, $message, $headers);
       header('Location: ' . $_SERVER['HTTP_REFERER'] . '#ContactForm');
    } catch (Exception $e){
-        $logMsg = date();
-        $logMsg .= 'n\r\' . $_POST['E-mail'] . ' ' . $_POST['Subject'];
-        $logMsg .= 'n\r\' . $e->getMessage();
+        $logMsg = (string)date();
+        $logMsg .= '\n\r' . $_POST['E-mail'] . ' ' . $_POST['Subject'];
+        $logMsg .= '\n\r' . $e->getMessage();
         $logMsg .= '----------------------------------------------------';
         file_put_contents($logFile, $logMsg, 'FILE_APPEND');
    }
