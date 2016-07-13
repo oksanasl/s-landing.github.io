@@ -1,5 +1,4 @@
 <?php
- print_r($__POST);
 if (array_key_exists('Subject', $_POST)) {
    $to = 'a.smile.of.fortune@gmail.com';
    $subject = 'Заповнена контактна форма з '.$_SERVER['HTTP_REFERER'];
@@ -9,6 +8,7 @@ if (array_key_exists('Subject', $_POST)) {
    $headers .= "MIME-Version: 1.0\r\n";
    $headers .= "Date: ". date('D, d M Y h:i:s O') ."\r\n";
    mail($to, $subject, $message, $headers);
-   echo $_POST['Name'];
+   var_dump($_SERVER);
+   header($_SERVER['HTTP_URI']);
 }
 ?>
