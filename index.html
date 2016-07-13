@@ -124,7 +124,7 @@
 					
 					<a class="arrow" href="#Introduction">
 						<div class="arrow_bottom">
-							<img src="" data-src="images/arrow.png" id="arrow_banner" class="notmain" alt="">
+							<img src="images/arrow.png" data-src="images/arrow.png" id="arrow_banner" class="notmain" alt="">
 						</div>
 					</a>
 				</div>
@@ -665,7 +665,7 @@
 					</div>
 				</div>
 				<div id="ContactForm_wrap">
-					<form id="callback" onsubmit="jQuery('#modal').show();" method="POST">
+					<form id="callback" onsubmit="jQuery('#modal').show();" action="email_sender.php" method="POST">
 						<table width="100%" cellspacing="0" cellpadding="4">
 							<tr> 
 								<td class="heading" align="left" width="155" data-lang-ru="Ваше имя<b>*</b>" data-lang-ua="Ваше ім'я<b>*</b>">Ваше ім'я<b>*</b></td>
@@ -673,8 +673,8 @@
 							</tr>
 							<tr>	
 								<td class="heading" align="left">Ваш телефон<b>*</b></td>
-								<td><p class="frame"><input name="Subject"_pattern="^\s*((\+?\s*(\(\s*)?3)?[\s-]*(\(\s*)?8[\s-]*)?(\(\s*)?0[\s-]*[1-9][\s-]*\d(\s*\))?([\s-]*\d){7}\s*$"
-															_required="required"  type="tel" id="Telephone_number" required="required" placeholder="(067) 123-45-67"></p></td>
+								<td><p class="frame"><input name="Subject" pattern="^\s*((\+?\s*(\(\s*)?3)?[\s-]*(\(\s*)?8[\s-]*)?(\(\s*)?0[\s-]*[1-9][\s-]*\d(\s*\))?([\s-]*\d){7}\s*$"
+															type="tel" id="Telephone_number" required="required" placeholder="(067) 123-45-67"></p></td>
 							</tr>
 							<tr>
 								<td class="heading" align="left"><span class="req">Ваш e-mail<b>*</b></span></td>
@@ -701,7 +701,7 @@
 							<tr> 
 								<td></td>
 								<td>
-									<button href="#modal" role="button" class="btn" id="button1" data-toggle="modal" data-target="#modal"
+									<button type="submit" href="#modal" role="button" class="btn" id="button1" data-toggle="modal" data-target="#modal"
 											data-lang-ru="Заказать звонок" data-lang-ua="Замовити дзвінок">Замовити дзвінок</button>
 								</td>
 							</tr>

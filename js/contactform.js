@@ -4,7 +4,7 @@
 document.getElementById('feedback-form').addEventListener('submit', function(evt){
     var http = new XMLHttpRequest(), f = this;
     evt.preventDefault();
-    http.open("POST", "/contacts.php", true);
+    http.open("POST", "/email_sender.php", true);
     http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     http.send("Name=" + f.Name.value + "&Telephone_number=" + f.Telephone_number.value + "&mail=" + f.mail.value + "&Comment=" + f.Comment.value);
     http.onreadystatechange = function() {
