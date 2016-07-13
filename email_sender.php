@@ -15,7 +15,7 @@ if (array_key_exists('Subject', $_POST)) {
    try {
       mail($to, $subject, $message, $headers);
       header('Location: ' . $_SERVER['HTTP_REFERER'] . '#ContactForm');
-   } catch (Exception e){
+   } catch (Exception $e){
         $logMsg = date();
         $logMsg .= 'n\r\' . $_POST['E-mail'] . ' ' . $__POST['Subject'];
         $logMsg .= 'n\r\' . $e->getMessage();
