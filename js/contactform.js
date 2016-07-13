@@ -1,7 +1,7 @@
 /**
  * Created by Окси on 12.07.2016.
  */
-document.getElementById('feedback-form').addEventListener('submit', function(evt){
+document.getElementById('callback').addEventListener('submit', function(evt){
     var http = new XMLHttpRequest(), f = this;
     evt.preventDefault();
     http.open("POST", "/email_sender.php", true);
