@@ -14,7 +14,8 @@ if (array_key_exists('Subject', $_POST)) {
 
    try {
       mail($to, $subject, $message, $headers);
-      header('Location: ' . $_SERVER['HTTP_REFERER'] . '/index.html#ContactForm');
+      echo true;
+//      header('Location: ' . $_SERVER['HTTP_REFERER'] . '/index.html#ContactForm');
    } catch (Exception $e){
         $logMsg = (string)date('l jS \of F Y h:i:s A');
         $logMsg .= '\n\r' . $_POST['E-mail'] . ' ' . $_POST['Subject'];
