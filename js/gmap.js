@@ -5,7 +5,7 @@ function initialize() {
     scrollwheel: false,
 	mapTypeId:google.maps.MapTypeId.ROADMAP
   };
-  var map=new google.maps.Map(document.getElementById("Map"),mapProp);
+  var map=new google.maps.Map(document.getElementById("gMap"),mapProp);
   
   var marker = new google.maps.Marker({
     position: new google.maps.LatLng(49.576656, 25.624144),
