@@ -1,4 +1,6 @@
 function initialize() {
+  var LatLng = {lat: 49.576656, lng: 25.624144};
+
   var mapProp = {
     center:new google.maps.LatLng(49.576656, 25.624144),
     zoom:15,
@@ -12,5 +14,9 @@ function initialize() {
     map: map,
     title: "СТЕН - Будматеріали гуртом та в роздріб"
   });
+
+  // To add the marker to the map, call setMap();
+  marker.setMap(map);
 }
+
 google.maps.event.addDomListener(window, "load", initialize);
