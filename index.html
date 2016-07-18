@@ -224,8 +224,8 @@
 					<div class="Benefits_item">
 						<i class="fa fa-home"></i>
 						<div class="Benefits_text" data-lang-ru="Вкладывайте деньги в семью, а не в переплату и наценки строймагазинов и гипермаркетов"
-							 data-lang-ua="Вкладайте гроші в сім'ю, а не в переплату і націнки строймагазінов і гіпермаркетів">
-											Вкладайте гроші в сім'ю, а не в переплату і націнки строймагазінов і гіпермаркетів</div>
+							 data-lang-ua="Вкладайте гроші в сім'ю, а не в переплату і націнки гіпермаркетів і магазинів">
+											Вкладайте гроші в сім'ю, а не в переплату і націнки гіпермаркетів і магазинів</div>
 					</div>
 				</div>
 				<div class="Benefits_row_2 animated fadeInUp">
@@ -670,16 +670,16 @@
 						<table width="100%" cellspacing="0" cellpadding="4">
 							<tr> 
 								<td class="heading" align="left" width="155" data-lang-ru="Ваше имя<b>*</b>" data-lang-ua="Ваше ім'я<b>*</b>">Ваше ім'я<b>*</b></td>
-								<td><p class="frame"><input name="Name" type="text" id="Name" required="required" placeholder="Богдан"></p></td>
+								<td><p class="frame"><input name="Name" type="text" pattern="\w" id="Name" required="required" placeholder="Богдан"></p></td>
 							</tr>
 							<tr>	
 								<td class="heading" align="left">Ваш телефон<b>*</b></td>
-								<td><p class="frame"><input name="Subject" pattern="^\s*((\+?\s*(\(\s*)?3)?[\s-]*(\(\s*)?8[\s-]*)?(\(\s*)?0[\s-]*[1-9][\s-]*\d(\s*\))?([\s-]*\d){7}\s*$"
-															type="tel" id="Telephone_number" required="required" placeholder="(067) 123-45-67"></p></td>
+								<td><p class="frame"><input name="Subject" pattern="{10,}" type="tel" id="Telephone_number"
+															required="required" placeholder="0671234567"></p></td>
 							</tr>
 							<tr>
 								<td class="heading" align="left"><span class="req">Ваш e-mail<b>*</b></span></td>
-								<td><p class="frame"><input name="E-mail" type="email" id="mail" required="required" placeholder="bohdan@gmail.com"></p></td>
+								<td><p class="frame"><input name="E-mail" type="email" pattern="([A-Za-z0-9-._]+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})" id="mail" required="required" placeholder="bohdan@gmail.com"></p></td>
 							</tr>
 							<tr> 
 								<td></td>
