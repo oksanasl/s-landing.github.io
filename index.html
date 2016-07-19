@@ -681,7 +681,7 @@
 						<table width="100%" cellspacing="0" cellpadding="4">
 							<tr> 
 								<td class="heading" align="left" width="155" data-lang-ru="Ваше имя<b>*</b>" data-lang-ua="Ваше ім'я<b>*</b>">Ваше ім'я<b>*</b></td>
-								<td><p class="frame"><input name="Name" type="text" pattern="\w" id="Name" required="required" placeholder="Богдан"></p></td>
+								<td><p class="frame"><input name="Name" type="text" pattern="[A-Za-zА-Яа-яіїє-]+" id="Name" required="required" placeholder="Богдан"></p></td>
 							</tr>
 							<tr>	
 								<td class="heading" align="left">Ваш телефон<b>*</b></td>
@@ -690,7 +690,7 @@
 							</tr>
 							<tr>
 								<td class="heading" align="left"><span class="req">Ваш e-mail<b>*</b></span></td>
-								<td><p class="frame"><input name="E-mail" type="email" pattern="/^([a-z0-9_\.-]+)@([a-z0-9_\.-]+)\.([a-z\.]{2,6})$/" id="mail" required="required" placeholder="bohdan@gmail.com"></p></td>
+								<td><p class="frame"><input name="E-mail" type="email" pattern="/^([a-zа-яіїє0-9_\.-]+)@([a-а-я-9_\.-]+)\.([a-z\.]{2,6})$/" id="mail" required="required" placeholder="bohdan@gmail.com"></p></td>
 							</tr>
 							<tr> 
 								<td></td>
@@ -726,7 +726,7 @@
 								<td></td>
 								<td>
 									<button onclick="window.open('docs/license.pdf')" class="button2" value="Завантажити прайс-лист" alt="Завантажити прайс-лист"
-											data-lang-ru="Загрузить прайс-лист" data-lang-ua="Завантажити прайс-лист">Завантажити прайс-лист</button>
+											data-lang-ru="Загрузить прайс-лист" data-lang-ua="Завантажити прайс-лист" disabled>Завантажити прайс-лист</button>
 								</td>
 							</tr>
 					</table>		
