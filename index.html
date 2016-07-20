@@ -684,7 +684,7 @@
 				</div>
 				<div id="ContactForm_wrap">
 					<span id="rule"></span>
-					<form id="callback" method="POST" onsubmit="yourJsFunctionName()">
+					<form id="callback" method="POST" onsubmit="DownloadingPriceUnblock()">
 						<table width="100%" cellspacing="0" cellpadding="4">
 							<tr> 
 								<td class="heading" align="left" width="155" data-lang-ru="Ваше имя<b>*</b>" data-lang-ua="Ваше ім'я<b>*</b>">Ваше ім'я<b>*</b></td>
@@ -693,7 +693,7 @@
 							</tr>
 							<tr>	
 								<td class="heading" align="left">Ваш телефон<b>*</b></td>
-								<td><p class="frame"><input name="Subject" pattern="{10,}" type="tel" id="Telephone_number"
+								<td><p class="frame"><input name="Subject" pattern="[0-9]{10,}" type="tel" id="Telephone_number"
 															required="required" placeholder="0671234567"></p><span id="r2"></span></td>
 							</tr>
 							<tr>

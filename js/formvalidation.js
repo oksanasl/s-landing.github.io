@@ -5,7 +5,7 @@ $(document).ready(function() {
         var mail = $('#mail').val();
 
         var name_regex = /^[A-Za-zА-Яа-яіїє-]+$/;
-        var tel_regex = /{10,}+$/;
+        var tel_regex = /[0-9]{10,}+$/;
         var email_regex = /^[\w\-\.\+]+\@[a-zA-Zа-яА-Яіїє0-9\.\-]+\.[a-zA-zа-я0-9]{2,4}$/;
                             // /^([a-zа-яіїє0-9_\.-]+)@([a-а-я-9_\.-]+)\.([a-z\.]{2,6})$/
         if (name.length == 0) {
@@ -38,3 +38,15 @@ $(document).ready(function() {
 });/**
  * Created by Окси on 19.07.2016.
  */
+
+
+$('#callback').ready(function() {
+    $('#submit').click(function(e) {
+
+        function DownloadingPriceUnblock(){
+        if ($('#submit').isValid()) {
+        document.getElementById('downloadPrice'). removeAttribute('disabled')
+    }
+};
+    });
+})
