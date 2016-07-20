@@ -14,9 +14,10 @@ jQuery(document).ready(function () {
             + "&Comment=" + f.getElementById('Comment').value);
         http.onreadystatechange = function() {
             if (http.readyState == 4 && http.status == 200) {
-                alert(http.responseText + ', Ваше повідомлення отримано.\nНаші специалисти дадуть відповідь Вам протягом 10 хв.\nМи вдячні Вам за інтерес до нашої компанії!');
-                f.messageFF.removeAttribute('value'); // очистить поле сообщения (две строки)
-                f.messageFF.value='';
+                $("#modal").modal("show");
+                // alert(http.responseText + ', Ваше повідомлення отримано.\nНаші спеціалісти дадуть відповідь Вам протягом 10 хв.\nМи вдячні Вам за інтерес до нашої компанії!');
+                f.Name.removeAttribute('value'); // очистить поле сообщения (две строки)
+                f.Name.value='';
             }
         }
         http.onerror = function() {
