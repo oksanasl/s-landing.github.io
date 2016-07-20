@@ -39,14 +39,3 @@ $(document).ready(function() {
  * Created by Окси on 19.07.2016.
  */
 
-
-$('#callback').ready(function() {
-    $('#submit').click(function(e) {
-
-        function DownloadingPriceUnblock(){
-        if ($('#submit').isValid()) {
-        document.getElementById('downloadPrice'). removeAttribute('disabled')
-    }
-};
-    });
-})
