@@ -693,12 +693,12 @@
 							</tr>
 							<tr>	
 								<td class="heading" align="left">Ваш телефон<b>*</b></td>
-								<td><p class="frame"><input name="Subject" pattern="[0-9]{10,}" type="tel" id="Telephone_number"
+								<td><p class="frame"><input name="Telephone_number" pattern="[0-9]{10,}" type="tel" id="Telephone_number"
 															required="required" placeholder="0671234567"></p><span id="r2"></span></td>
 							</tr>
 							<tr>
 								<td class="heading" align="left"><span class="req">Ваш e-mail<b>*</b></span></td>
-								<td><p class="frame"><input name="E-mail" type="email" pattern="/^([a-zа-яіїє0-9_\.-]+)@([a-а-я-9_\.-]+)\.([a-z\.]{2,6})$/"
+								<td><p class="frame"><input name="email" type="email" pattern="/^([a-zа-яіїє0-9_\.-]+)@([a-а-я-9_\.-]+)\.([a-z\.]{2,6})$/"
 															id="mail" required="required" placeholder="bohdan@gmail.com"></p>
 									<span id="r3"></span>
 								</td>
@@ -736,6 +736,7 @@
 							<tr> 
 								<td></td>
 								<td>
+									<div id="fillFormMsg" style="display:none;"><span>Заповніть форму</span></div>
 									<button onclick="window.open('docs/license.pdf')" class="button2" id="downloadPrice" value="Завантажити прайс-лист" alt="Завантажити прайс-лист"
 											data-lang-ru="Загрузить прайс-лист" data-lang-ua="Завантажити прайс-лист" disabled>Завантажити прайс-лист</button>
 								</td>

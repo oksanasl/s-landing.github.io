@@ -1,14 +1,7 @@
-$('#callback').submit(function(e){
-    $("#button1").click(function() {
-
-        function DownloadingPriceUnblock(){
-            if ($("submit").submit()) {
-                document.getElementById("#downloadPrice"). removeAttribute("disabled");
-            }
+jQuery(document).ready(function () {
+    jQuery('#downloadPrice').click(function() {
+        if ($('#downloadPrice').prop('disabled') ) {
+            $("#fillFormMsg").toggle();
         }
     });
 });
-
-/**
- * Created by Окси on 20.07.2016.
- */
