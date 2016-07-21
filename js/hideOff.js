@@ -1,4 +1,4 @@
 document.getElementById("modal")
-.getElementById("modal").on('click', function () {
+document.getElementById("modal").on('click', function () {
 			removeClass("hide")
 });
