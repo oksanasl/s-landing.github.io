@@ -1,13 +1,10 @@
-$("#callback").ready(function() {
-    $("#button1").click(function(e) {
-
-        function DownloadingPriceUnblock(){
-            if ($("submit").isValid()) {
-                document.getElementById("#downloadPrice"). removeAttribute("disabled");
-            }
-        }
-    });
-});
+// function DownloadingPriceUnblock(event){
+//     var http = new XMLHttpRequest(), f = this;
+//         if (http.readyState == 4 && http.status == 200) {
+//     $("#downloadPrice"). removeAttribute ("active");
+// }
+// });
+// }
 
 
 /**
