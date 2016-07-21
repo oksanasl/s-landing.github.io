@@ -30,7 +30,7 @@ $(document).ready(function() {
             $("#mail").focus();
             return false;
         }
- else {
+        else {
             $("#modal").modal("show");
             return true;
         }
