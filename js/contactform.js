@@ -15,7 +15,7 @@ jQuery(document).ready(function () {
         http.onreadystatechange = function() {
             if (http.readyState == 4 && http.status == 200) {
                 $("#modal").modal("show");
-                document.getElementById("#downloadPrice"). removeAttribute ("active");
+                document.getElementById("#downloadPrice"). removeAttribute("active");
                 // alert(http.responseText + ', Ваше повідомлення отримано.\nНаші спеціалісти дадуть відповідь Вам протягом 10 хв.\nМи вдячні Вам за інтерес до нашої компанії!');
                 // f.Name.removeAttribute('value'); // очистить поле сообщения (две строки)
                 // f.Name.value='';
