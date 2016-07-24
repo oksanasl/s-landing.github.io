@@ -601,17 +601,17 @@ a.main-logo.active{
     width: 40px;
     height: 40px;
     margin-top: -20px;
-    font-size: 60px;
+    font-size: 90px;
     font-weight: 100;
     line-height: 30px;
-    color: #ffffff;
+    color: #FFA500;
     text-align: center;
-    background: #222222;
+    background: none;
     /* border: 3px solid #ffffff; */
     -webkit-border-radius: 23px;
     -moz-border-radius: 23px;
     border-radius: 23px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     filter: alpha(opacity=50);
 }
 
