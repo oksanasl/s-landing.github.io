@@ -1312,8 +1312,39 @@ textarea {
 	text-decoration: none;
 	/*display: block;*/
 }
+.button2 {
+    margin: 10px auto 40px auto;
+    padding: 10px 10px;
+    background-color: transparent;
+    color: #FFA500;
+    font-family: 'Ubuntu-L', sans-serif;
+    font-size: 30px;
+    box-shadow: none;
+    border-radius: 0;
+    font-weight: 500;
+    border: 1px solid #FFA500;
+    height: 60px;
+    width: 423px;
+    cursor: pointer;
+}
 .hide{
     display: none;
+}
+#downloadPrice{
+    z-index: 1;
+}
+.nonactive{
+    color: #d9d9d9;
+    border: 2px solid rgb(154, 148, 138);
+}
+.overlay_downloadPrice {
+    background: transparent;
+    position:relative;
+    height: 60px;
+    width: 423px;
+    top: 70px;  /* your iframe height */
+    margin-top: -60px;  /* your iframe height */
+    margin-left: 0;
 }
 [class*="span"].hide,
 .row-fluid [class*="span"].hide {
@@ -1447,21 +1478,6 @@ textarea {
 .modal-backdrop.fade.in {
   opacity: 0.8;
   filter: alpha(opacity=80);
-}
-.button2 {
-	margin: 10px auto 40px auto;
-	padding: 10px 10px;
-	background-color: transparent;
-	color: #FFA500;
-	font-family: 'Ubuntu-L', sans-serif;
-	font-size: 30px;
-	box-shadow: none;
-	border-radius: 0;
-	font-weight: 500;
-	border: 1px solid #FFA500;
-	height: 60px;
-	width: 423px;
-	cursor: pointer;
 }
 .dialog-header-notify {
 	background-color: #eeeeee; 
