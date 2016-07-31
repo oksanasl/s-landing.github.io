@@ -4,6 +4,13 @@
 jQuery(document).ready(function () {
     document.addEventListener('submit', function(evt){
         evt.preventDefault();
+
+        $(".overlay_downloadPrice").hide();
+        $("#fillFormMsg span").hide();
+        $("#downloadPrice").removeClass("nonactive");
+        var callbackFormNotSent = true;
+        // jQuery.cookie("callbackFormNotSent", false);
+
         var form = this;
         var formData = "Name=" + form.getElementById('Name').value
             + "&Telephone_number=" + form.getElementById('Telephone_number').value
@@ -18,7 +25,8 @@ jQuery(document).ready(function () {
                 if (data === "true") {
                     $("#modal").modal("show");
                     document.getElementById("downloadPrice").removeAttribute("disabled");
-                    $("#fillFormMsg").toggle();
+                    // $(".overlay_downloadPrice").toggle();
+                    // $("#fillFormMsg span").hide();
                 } else {
                     alert(data)
                 }
