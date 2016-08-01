@@ -1333,6 +1333,13 @@ textarea {
 #downloadPrice{
     z-index: 1;
 }
+#fillFormMsg span{
+    color: #FF0000;
+    font-weight: 600;
+}
+#fillFormMsg i{
+    color: #FFA500;
+}
 .nonactive{
     color: #d9d9d9;
     border: 2px solid rgb(154, 148, 138);
