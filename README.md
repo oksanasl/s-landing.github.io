@@ -8,11 +8,17 @@ New HipChat Room https://stendevteam.hipchat.com/chat/room/2924895
 
 
 Tasks to be performed before release:
+
 1.	Carousel data-target bug when clicking < >
+
 2.	Bootstrap carousel is not started sliding automatically when the page loads
+
 3.	First page synchronous loading
 
 Mobile version:
+
 1.	Add text overflow to StateOfBusiness section
+
 2.	Placeholders different font size 
+
 3.	Footer font size too big
