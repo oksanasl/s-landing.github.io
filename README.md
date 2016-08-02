@@ -6,8 +6,8 @@ Developers Team Chat https://www.hipchat.com/gb3572P50
 
 New HipChat Room https://stendevteam.hipchat.com/chat/room/2924895
 
-
-Stable Release version 0.4 containing new features and bug fixes:
+RELEASES
+Stable Release 0.4v:
 
 Bugs fixed:
     1.	Carousel data-target bug when clicking <>
