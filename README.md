@@ -6,11 +6,13 @@ Developers Team Chat https://www.hipchat.com/gb3572P50
 
 New HipChat Room https://stendevteam.hipchat.com/chat/room/2924895
 
+
 RELEASES
 
-Stable Release 0.4v:
+Release 0.4v:
 
 Bugs fixed:
+
     1.	Carousel data-target bug when clicking <>
 
     2.	Bootstrap carousel is not started sliding automatically when the page loads
