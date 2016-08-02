@@ -7,6 +7,7 @@ Developers Team Chat https://www.hipchat.com/gb3572P50
 New HipChat Room https://stendevteam.hipchat.com/chat/room/2924895
 
 RELEASES
+
 Stable Release 0.4v:
 
 Bugs fixed:
@@ -25,6 +26,7 @@ Bugs fixed:
     6.	Footer font size too big
 
 New features:
+
     1. Download price list button validation
 
     2. Callback form which is sent to admin email box
