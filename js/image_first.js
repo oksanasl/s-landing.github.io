@@ -1,26 +1,29 @@
-/**
- * Created by Окси on 16.06.2016.
- */
-// document.getElementById('man').style.backgroundImage.load(function() {
-//     $(".notmain").attr('src', function() {
-//         return $(this).attr("data-src");
-//     });
+// var elements = document.getElementsByClassName("first_hide");
+//
+// document.getElementById("man").style.backgroundImage.onLoad(function(){
+//     elements.removeClass("hide")
 // });
+
+
+var bgImg = $("#man").css("background-image", "url('/images/TopBanner0.jpg')");
+bgImg.onload = function(){
+    $("#man").style.backgroundImage = 'url(' + bgImg.src + ')';
+};
+bgImg.src = imageLocation;
+
+var listOfId = jQuery("#logo_man, #hr_man, #arrow_banner1, #myNavbar1");
+
+    jQuery("#man").css("background-image", "url('/images/TopBanner0.jpg')").on('load', function() {
+        jQuery.each(listOfId).removeClass("hide");
+    });
+
+// $(function( )
+// {
+// var background = document.getElementById("#man").style.backgroundImage = 'url(/images/TopBanner0.jpg)';
+//     var elements = document.getElementsByClassName("first_hide");
 //
-// var img = new Image();
-// img.src = 'images/TopBanner0.jpg';
-//
-// var int = setInterval(function() {
-//     if (img.complete) {
-//         clearInterval(int);
-//         document.getElementsByTagName('man')[0].style.backgroundImage = 'images/TopBanner0.jpg(' + img.src + ')';
-//     }
-// }, 50);
-//
-// setInterval(function() {
-//     var img = new Image();
-//     img.src = "images/TopBanner0.jpg"
-//     img.onload=function(){$(img).fadeIn(500);}
-//     img.style.display="none";
-//     document.getElementById('parent').appendChild(img);
-// }, 500);
+//         background.onLoad = function( ){
+//         elements.removeClass("hide")
+//     };
+//         background.src = $("man").css("background-image");
+// });

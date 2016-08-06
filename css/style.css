@@ -77,7 +77,8 @@ font-style: normal;
 }
 #man {
     height: 100%;
-    background-image: url('../images/TopBanner0.jpg') 50% 0;
+    background-image: url('/images/TopBanner0.jpg');
+    background-position: 50% 0;
 }
 .module-parallax {
     background-attachment: fixed;
@@ -414,6 +415,9 @@ li {
 a.main-logo.active{
     background-color: transparent;
 }
+/*#logo_man, #hr_man, #arrow_banner, #myNavbar1{*/
+    /*display: none;*/
+/*}*/
 .flags_container{
     float: right;
     width: 100px;
