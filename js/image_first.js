@@ -9,7 +9,7 @@ var bgImg = $("#man").css("background-image", "url('/images/TopBanner0.jpg')");
 bgImg.onload = function(){
     $("#man").style.backgroundImage = 'url(' + bgImg.src + ')';
 };
-bgImg.src = imageLocation;
+// bgImg.src = imageLocation;
 
 var listOfId = jQuery("#logo_man, #hr_man, #arrow_banner1, #myNavbar1");
 
@@ -27,3 +27,7 @@ var listOfId = jQuery("#logo_man, #hr_man, #arrow_banner1, #myNavbar1");
 //     };
 //         background.src = $("man").css("background-image");
 // });
+
+$(document).ready(function () {
+    jQuery("a[data-slide=next]").trigger("click");
+});
