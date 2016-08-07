@@ -13,7 +13,7 @@ Release 0.4v:
 
 Bugs fixed:
 
-    1.	Carousel data-target bug when clicking <>
+    1.	Carousel data-target bug when clicking <>(fixed)
 
     2.	Bootstrap carousel is not started sliding automatically when the page loads
 
@@ -29,8 +29,8 @@ Bugs fixed:
 
 New features:
 
-    1. Download price list button validation
+    1. Download price list button validation(implemented)
 
-    2. Callback form which is sent to admin email box
+    2. Callback form which is sent to admin email box(implemented)
 
-    3. Gallery image
+    3. Gallery image(implemented)
