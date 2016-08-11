@@ -80,6 +80,11 @@ font-style: normal;
     background-image: url('/images/TopBanner0.jpg');
     background-position: 50% 0;
 }
+.bgImg
+{
+    background-image: url('/images/TopBanner0.jpg');
+    background-position: 50% 0;
+}
 .module-parallax {
     background-attachment: fixed;
 }
