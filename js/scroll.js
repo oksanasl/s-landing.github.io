@@ -38,6 +38,14 @@
 	}
 
 	$(document).ready(function () {
+		$('.carousel').carousel({
+			interval: 2000
+		})
+	});
+
+	$(document).ready(function () {
 		jQuery("a[data-slide=prev]").trigger("click");
 		jQuery("a[data-slide=next]").trigger("click");
 	});
+
+	
