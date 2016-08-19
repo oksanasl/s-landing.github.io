@@ -6,6 +6,8 @@ Developers Team Chat https://www.hipchat.com/gb3572P50
 
 New HipChat Room https://stendevteam.hipchat.com/chat/room/2924895
 
+Test and Deploy with Confidence https://travis-ci.org/
+
 
 RELEASES
 
