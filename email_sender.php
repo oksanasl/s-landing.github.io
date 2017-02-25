@@ -1,10 +1,10 @@
 <?php
-$isTestMode =  file_exists('.testModeFlag');
+$isTestModeFlag = file_exists('.testModeFlag');
 
 $logFile = __DIR__
     . str_replace('/', DIRECTORY_SEPARATOR, '/var/logs/emailNotSent.log');
 
-if ($isTestMode == true) {
+if ($isTestModeFlag) {
     file_put_contents($logFile, date(DATE_RFC822) . " Test mode is on\n", FILE_APPEND);
     $emailReceivers = 'a.smile.of.fortune@gmail.com';
 } else {
