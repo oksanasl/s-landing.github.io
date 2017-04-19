@@ -1,0 +1,20 @@
+@media screen and (max-width: 767px) {
+
+    #bignav{
+    display: none;
+}
+
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+    #smallnav{
+        display: none;
+    }
+
+
+
+}

@@ -14,6 +14,7 @@
 <!--<meta name="viewport" content="height=device-height, initial-scale=1">-->
 <link rel="stylesheet" type="text/css" href="css/style.css"/>
 <link rel="stylesheet" type="text/css" href="css/adoptive.css"/>
+<link rel="stylesheet" type="text/css" href="css/style-m.css"/>
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="shortcut icon" href="favicon.ico"/>
 <link rel="icon" type="image/gif" href="favicon.gif" />
@@ -59,7 +60,7 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 <?php include_once("analyticstracking.php") ?>
-	<nav class="navbar navbar-inverse affix-top" data-spy="affix" data-offset-top="820" role="navigation">
+	<nav class="navbar navbar-inverse affix-top" id="bignav" data-spy="affix" data-offset-top="820" role="navigation">
 		<div id="myNavbar1" class="navbar-fixed-top fixednav hide">
 			<!--<div class="container container-fluid">-->
 			<div id="myNavbar" class="collapse navbar-collapse">
@@ -100,6 +101,8 @@
 		</div>
 	</nav>
 
+
+
 	<div id="modal" class="modal hide" aria-hidden="true" style="display: none;" aria-labelledby="myModalLabel">
 		<div class="fade modal-backdrop">
 		</div>
@@ -113,6 +116,18 @@
 				<h2 data-lang-ru="Мы свяжемся с Вами до 10 минут" data-lang-ua="Ми зв'яжемося з вами протягом 15 хв">Ми зв'яжемося з вами протягом 15 хв</h2>
 			</div>
 	</div>
+
+
+	<nav class="navbar navbar-default" id="smallnav" >
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					<img alt="Brand" src="...">
+				</a>
+			</div>
+		</div>
+	</nav>
+
 
 	<div class="top-section">
 			<div id="MainBanner" class="container-fluid">
@@ -784,7 +799,7 @@
 										</span><br></span>
 										<!--onClick="style.pointerEvents='none'"-->
 										<div class="overlay_downloadPrice"></div>
-										<button onclick="window.open('docs/price_sten.pdf'); " class="button2" id="downloadPrice" value="Завантажити прайс-лист"
+										<button onclick="window.open('docs/price_sten190417.pdf'); " class="button2" id="downloadPrice" value="Завантажити прайс-лист"
 												alt="Завантажити прайс-лист"
 											data-lang-ru="Загрузить прайс-лист" data-lang-ua="Завантажити прайс-лист">Завантажити прайс-лист</button>
 									</div>
